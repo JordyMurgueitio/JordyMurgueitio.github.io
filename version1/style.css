@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+/* Home section Mobile */
+header {
+    background-image: url(../images/botedef.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+}
+    /* NAV MOBILE */
+#navegacion {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100%;
+}
+#hamburger {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#hamburger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#collapsibleNavbar {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#ul {
+    /* background-color: aqua; */
+    height: 100%;
+}
+#ul li {
+    /* background-color: aqua; */
+    margin-bottom: 2%;
+    padding: 2%;
+}
+#ul a {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    transition: .5s;
+}
+
+#nombre {
+    /* background-color: aqua; */
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    /* position: fixed; */
+    width: 100%;
+}
+#nombre h1{
+    font-size: 250%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+#verticalnav{
+    display: none;
+}
+#avatar {
+    display: none;
+}
+#botones {
+    /* background-color: aquamarine; */
+    position: absolute;
+    bottom:  12%;
+    /* position: static; */
+    width: 100%;
+}
+#botones button {
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: #fff;
+    transition: .5s;
+}
+
+#botones button:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+#arrow {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+#arrow a {
+    font-size: 2rem;
+    color: #fff;
+}
+#arrow a:hover {
+    color: black;
+}
+
+/* HOME SECTION SMALL */
+
+@media screen and (min-width: 750px){
+    #nombre {
+        position: absolute;
+        top: 10%;
+        /* position: fixed; */
+        width: 100%;
+    }
+}
+
+/* HOME SECTION MEDIUM */
+
+@media screen and (min-width: 1000px){
+    header {
+        background-image: none;
+        height: 100vh;
+        margin: 0;
+        background-color: #ffffff;
+        margin-right: 0px;
+        text-align: center;
+    }
+    #navegacion {
+        display: none;
+    }
+    /* Vertical Nav */
+    #verticalnav{
+        display: inline-block;
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url(../images/boat.jpg);
+        overflow-x: hidden;
+        margin-right: 0px;
+        border-right: 1px solid white;
+    }
+    #avatar {
+        display: none;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    #avatar img {
+        width: 100%;
+    }
+
+    #verticalnav ul {
+        /* background-color: aquamarine; */
+        padding-left: 0px;
+    }
+    #verticalnav ul li {
+        /* background-color: #00252E; */
+        list-style-type: none;
+        width: 100%;
+        padding: 5%;
+    }
+    #verticalnav ul a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    /* Right section */
+    header #right {
+        background-image: url(../images/botedef.jpg);
+        background-size: cover;
+        background-position:  center;
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+        margin-left: 20%;
+        margin-right: 0px;
+    }
+    #nombre {
+        /* background-color: aqua; */
+        text-align: center;
+        color: #fff;
+        position: relative;
+        top: 10%;
+        /* position: fixed; */
+        width: 100%;
+    }
+    #nombre h1{
+        font-size: 250%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 300;
+    }
+    #botones {
+        /* background-color: aquamarine; */
+        position: relative;
+        top: 60%;
+        width: 40%;
+        /* position: static; */
+        margin: 0 auto;
+    }
+    #botones button {
+        display: block;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 10px;
+        border: 2px solid white;
+        border-radius: 5px;
+        color: #fff;
+        transition: .5s;
+    }
+    #arrow {
+        position: relative;
+        top: 65%;
+        text-align: center;
+        width: 20%;
+        margin: 0 auto;
+    }
+    #arrow a {
+        font-size: 2rem;
+        color: #fff;
+    }
+    #arrow a:hover {
+        color: black;
+    }
+} 
+
+/* HOME LARGE SCREEN */
+
+@media screen and (min-width: 1200px){
+    /* Vertical Nav */
+    #verticalnav{
+        display: inline-block;
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        margin-right: 0px;
+        border-right: 1px solid white;
+    }
+
+    #verticalnav ul {
+        background-color: aquamarine;
+        padding-left: 0px;
+    }
+    #verticalnav ul li {
+        background-color: rgb(0, 0, 0);
+        list-style-type: none;
+        width: 100%;
+        padding: 5%;
+    }
+    #verticalnav ul a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    /* Right section */
+    header #right {
+        background-image: url(../images/boat.jpg);
+        background-size: cover;
+        background-position: center;
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+        margin-left: 20%;
+        margin-right: 0px;
+    }
+    #botones {
+        /* background-color: aquamarine; */
+        position: relative;
+        top: 67%;
+        width: 40%;
+        /* position: static; */
+        margin: 0 auto;
+    }
+    #arrow {
+        position: relative;
+        top: 69%;
+        text-align: center;
+        width: 20%;
+        margin: 0 auto;
+    }
+}
+
+/* HOME SECTION EXTRA LARGE */
+@media screen and (min-width: 1500px){
+    header #right {
+        /* background-image: url(../images/botebig.jpg); */
+        background-size: cover;
+        background-position: center;
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+        margin-left: 20%;
+        margin-right: 0px;
+    }
+    #nombre {
+        /* background-color: aqua; */
+        text-align: center;
+        color: #fff;
+        position: relative;
+        top: 5%;
+        /* position: fixed; */
+        width: 100%;
+    }
+    #nombre h1{
+        font-size: 200%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 300;
+    }
+    #botones {
+        /* background-color: aquamarine; */
+        position: relative;
+        top: 65%;
+        width: 40%;
+        /* position: static; */
+        margin: 0 auto;
+    }
+    #arrow {
+        position: relative;
+        top: 67%;
+        text-align: center;
+        width: 20%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* About me */
+main {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+}
+main h1 {
+    color: #fff;
+}
+main div {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: 0 auto;
+}
+
+main img {
+    width: 100%;
+    
+}

@@ -1,0 +1,568 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+/* Home section Mobile */
+header {
+    background-image: url(../images/bigdaddyd.jpg);
+    background-color: #000000;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+}
+    /* NAV MOBILE */
+#navegacion {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    right: 0;
+    width: 100%;
+}
+#hamburger {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#hamburger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#collapsibleNavbar {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+#ul li {
+    /* background-color: aqua; */
+    padding: 2%;
+}
+#ul a {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+/* Contenido header */
+#nombre {
+    /* background-color: aqua; */
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    /* position: fixed; */
+    width: 100%;
+}
+#nombre h1{
+    font-size: 250%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+#tabletnav {
+    display: none;
+}
+#verticalnav{
+    display: none;
+}
+#avatar {
+    display: none;
+}
+#botones {
+    /* background-color: aquamarine; */
+    position: absolute;
+    bottom:  13%;
+    /* position: static; */
+    width: 100%;
+}
+#botones button {
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: #fff;
+    transition: .5s;
+}
+
+#botones button:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+.arrow a {
+    font-size: 2rem;
+    color: #fff;
+}
+/* HOME TABLETS */
+@media screen and (min-width: 750px){
+    #navegacion {
+    display: none;
+    }
+    #tabletnav {
+        display: block;
+        /* background-color: aqua; */
+    }
+    #tabletnav ul {
+        /* background-color: blueviolet; */
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    #tabletnav ul li {
+        /* background-color: antiquewhite; */
+        list-style-type: none;
+        display: inline-block;  
+        width: 12%;
+
+    }
+    #tabletnav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    #tabletnav ul li a:hover {
+        color: black;
+    }
+}
+
+/* HOME SECTION MEDIUM */
+
+@media screen and (min-width: 1000px){
+    header {
+        background-image: none;
+        height: 100vh;
+        margin: 0;
+        background-color: #000000;
+        margin-right: 0px;
+        text-align: center;
+    }
+    #navegacion {
+        display: none;
+    }
+    #tabletnav {
+        display: none;
+    }
+    /* Vertical Nav */
+    #verticalnav{
+        display: inline-block;
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        margin-right: 0px;
+        border-right: 1px solid rgb(255, 255, 255);
+        padding-top: 10px;
+    }
+    #avatar {
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    #avatar img {
+        width: 100%;
+        border: 2px solid white;
+        max-width: 240px;
+    }
+
+    #verticalnav ul {
+        /* background-color: aquamarine; */
+        padding-left: 0px;
+    }
+    #verticalnav ul li {
+        background-color: #000000;
+        list-style-type: none;
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 25px;
+    }
+    #verticalnav ul a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    #verticalnav ul a:hover {
+        color: rgb(165, 161, 161);
+    }
+
+    /* Right section */
+    header #right {
+        background-image: url(../images/bigdaddyd.jpg);
+        background-size: cover;
+        background-position:  center;
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+        margin-left: 20%;
+        margin-right: 0px;
+    }
+    #nombre {
+        /* background-color: aqua; */
+        text-align: center;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 15%;
+        /* position: fixed; */
+        width: 100%;
+    }
+    #nombre h1{
+        font-size: 250%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 300;
+    }
+    #botones {
+        /* background-color: aquamarine; */
+        position: relative;
+        top: 60%;
+        width: 40%;
+        /* position: static; */
+        margin: 0 auto;
+    }
+    .arrow {
+        position: relative;
+        top: 65%;
+        text-align: center;
+        width: 20%;
+        margin: 0 auto;
+    }
+    .arrow a {
+        font-size: 2rem;
+        color: #fff;
+    }
+} 
+
+
+
+
+
+/* About me */
+/* Mobile */
+#aboutme {
+    background-color: rgb(255, 255, 255);
+    /* height: 100%; */
+    margin: 0;
+    text-align: center;
+    padding-top: 40px;
+}
+#aboutme h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+    /* background-color: rgb(117, 91, 56); */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+}
+#aboutme figure {
+    /* background-color: rgb(0, 0, 0); */
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+#aboutme img {
+    width: 100%;
+    max-width: 220px;
+    border: #fff 3px solid;
+}
+
+#aboutme .text {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+#aboutme p {
+    color: rgb(0, 0, 0);
+}
+#aboutme .links {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+#aboutme .links a {
+    background-color: #000000;
+    padding: 9px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 1%;
+    border: 1px solid rgb(0, 0, 0);
+    transition: .5s;
+    text-decoration: none;
+}
+#aboutme .links a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+#aboutme .downarrow {
+    background-color: rgb(255, 255, 255);
+    }
+#aboutme .downarrow a {
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
+    }
+#aboutme .downarrow a:hover {
+        color: #000000;
+    }
+/* ABOUT ME TABLETS */
+@media screen and (min-width: 750px){
+    #aboutme img {
+        width: 100%;
+        max-width: 220px;
+        border: #fff 3px solid;
+    }
+}
+/* About Me MEDIUM */
+@media screen and (min-width: 1000px){
+    #aboutme {
+        width: 80%;
+        margin-left: 20%;
+    }
+    #aboutme img {
+        width: 100%;
+        max-width: 220px;
+        border: #fff 3px solid;
+    }
+    #aboutme .text {
+        width: 60%;
+    }
+}
+
+/* SERVICES SECTION */
+/* MOBILE */
+
+#services {
+    background-color: #000000;
+    margin: 0px;
+    /* height: 100%; */
+    text-align: center;
+}
+#services h1 {
+    color: #ffffff;
+    padding-top: 40px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    /* background-color: #00252E; */
+}
+#services .flex-container {
+    /* background-color: rgb(148, 94, 23); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#development, #design, #wordpress {
+    /* background-color: aquamarine; */
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+#development:hover, #design:hover, #wordpress:hover {
+border: 1px solid white;
+border-radius: 10px;
+}
+
+#development i, #design i, #wordpress i{
+    color: #fff;
+    font-size: 3.4rem;
+    margin-bottom: 15px;
+}
+#services h3 {
+    color: #1f6675;
+    font-size: 1.1rem;
+}
+
+
+#services #world {
+    background-color: #00252E;
+    background-image: url(../images/ocean.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding-top: 50px;
+}
+#services #world p {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#world #contact-me {
+    background-color: #2e515a00;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 35px;
+}
+#world #contact-me a {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    transition: .5s;
+}
+#world #contact-me a:hover {
+    background-color: rgb(0, 0, 0);
+}
+/* #world .servicearrow {
+    background-color: #217221;
+} */
+#world .servicearrow i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* SERVICES TABLETS */
+
+@media screen and (min-width: 750px){
+    #services {
+        height: 100vh;
+    }
+    #services h1 {
+        padding-top: 40px;
+        margin-bottom: 0px;
+        height: 20%;
+        background-color: rgba(0, 255, 255, 0);
+    }
+    #services .flex-container {
+/*         margin-bottom: 45px;
+ */        background-color: #35728000;
+ padding-top: 3%;
+        height: 40%;
+        overflow: inherit;
+    }
+    #development, #design, #wordpress {
+        background-color: rgba(0, 0, 0, 0);
+        width:30%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    #services #world {
+        background-color: #00252E;
+        height: 40%;
+        
+    }
+}
+
+/* SERVICES MEDIUM */
+
+@media screen and (min-width: 1000px){
+    #services {
+        margin-left: 20%;
+        width: 80%;
+        height: 100vh;
+    }
+}
+
+
+
+/* PORTFOLIO SECTION */
+#portfolio {
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#portfolio h1 {
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 2.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#portfolio img {
+    width: 80%;
+}
+#personal, #marios {
+    margin-bottom: 40px;
+}
+#portfolio p {
+    background-color: #ffffff8a;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px;
+    border-radius: 10px;
+}
+.portfolioarrow {
+    background-color: #ffffff;
+    font-size: 2rem;
+}
+.portfolioarrow i {
+    color: #000000;
+}
+@media screen and (min-width: 1000px){
+    #portfolio {
+        margin-left: 20%;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* CONTACT SECTION */
+#contact {
+    background-color: #000000;
+    padding-top: 40px;
+    text-align: center;
+    height: 100vh;
+}
+#contact h1 {
+    font-size: 2.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    margin-bottom: 40px;
+}
+#contact form {
+    background-color: #000000;
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
+}
+form label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #ffffff;
+}
+form button {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 1000px){
+    #contact {
+        margin-left: 20%;
+        width: 80%;
+        text-align: center;
+        height: 100vh;
+    }
+    #contact form {
+        width: 50%;
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Link to my stylesheet -->
+    <link rel="stylesheet" href="./css/indexstyle.css">
+    <!-- Link to fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Jordy Murgueitio</title>
+</head>
+<body>
+
+    <!-- Home Section -->
+    <header>
+        <!-- NAV for Mobile -->
+        <nav id="navegacion" class="navbar  navbar-dark">
+            <div id="contener" class="container-fluid">
+                <p></p>
+                <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul id="ul" class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- NAV FOR TABLETS -->
+        <nav id="tabletnav">
+            <ul >
+                <li >
+                    <a  href="#">Home</a>
+                </li>
+                <li >
+                    <a href="#aboutme">About Me</a>
+                </li>
+                <li >
+                    <a href="#services">Services</a>
+                </li>
+                <li >
+                    <a  href="#portfolio">Portfolio</a>
+                </li>
+                <li >
+                    <a  href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- VERTICAL NAV MEDIUM AND LARGE -->
+
+        <nav id="verticalnav">
+            <div id="avatar">
+                <img src="./images/jordytest.jpg" alt="avatar" class="rounded-circle">
+            </div>
+            <ul >
+                <li >
+                    <a  href="#">Home</a>
+                </li>
+
+                <li >
+                    <a href="#aboutme">About Me</a>
+                </li>
+
+                <li >
+                    <a href="#services">Services</a>
+                </li>
+
+                <li >
+                    <a  href="#portfolio">Portfolio</a>
+                </li>
+
+                <li >
+                    <a  href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav> 
+
+        <!-- Contenido Header -->
+        <section id="right">
+        <div id="nombre">
+            <h1>Jordy Murgueitio</h1>
+            <p>Front End Web Developer</p>
+        </div>
+        
+        <div id="botones">
+            <button>Download Resume</button>
+        </div>
+
+        <div class="arrow">
+            <a href="#aboutme"><i class="fa fa-arrow-circle-down"></i></a>
+        </div>
+        </section> 
+    </header>
+
+<!-- ABOUT ME SECTION -->
+
+    <section id="aboutme">
+        <h1>About Me</h1>
+        <figure>
+        <img src="./images/jordyprueba.jpg" alt="jordy-smiling" class="rounded-circle">
+        </figure>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit ame,onsectetur adipiscing elit. Sed consequat risus sit amet mi sodales tempor. Aliquam et sapien condimentum, feugiat est id, tempus nunc. Mauris dolor ipsum, maximus sed sapien in, sollicitudin vehicula justo. Donec velit turpis, tincidunt quis est et, lobortis viverra velit. Pellentesque dignissim consequat feugiat. Duis vulputate quam sed quam feugiat euismod. In porttitor arcu quis justo placerat tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur hendrerit ac risus mattis sodales..
+            </p>
+        </div>
+        <div class="links">
+            <a href="#">Contact Me</a>
+            <a href="#">Download CV</a>
+        </div>
+        <div class="downarrow">
+            <a href="#services"><i class="fa fa-arrow-circle-down"></i></a>
+        </div>
+    </section>
+
+
+<!-- SERVICES SECTION -->
+    <section id="services">
+        <h1>Services</h1>
+
+        <div class="flex-container">
+            <div id="development">
+                <i class="fa fa-code"></i>
+                <h3>Web development</h3>
+                <p>It is a long established fact that a reader will be distracted</p>
+            </div>
+            <div id="design">
+                <i class="fa fa-desktop"></i>
+                <h3>Web Design</h3>
+                <p>It is a long established fact that a reader will be distracted</p>
+            </div>
+            <div id="wordpress">
+                <i class="fa fa-wordpress"></i>
+                <h3>Wordpress</h3>
+                <p>It is a long established fact that a reader will be distracted</p>
+            </div>
+        </div>
+
+        <div id="world">
+            <p>Need a Web Developer?</p>
+            <div id="contact-me" >
+                <a href="#">Contact me</a>
+            </div>
+            <div class="servicearrow">
+                <a href="#portfolio"><i class="fa fa-arrow-circle-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+<!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+        <div>
+            <p>Personal Portfolio</p>
+            <img src="./images/pordemo.jpg" alt="" id="personal">
+            <p>Mario's Pizza</p>
+            <img src="./images/marioblack.jpg" alt="" id="marios">
+        </div>
+        <div class="portfolioarrow">
+            <a href="#contact"><i class="fa fa-arrow-circle-down"></i></a>
+        </div>
+    </section>
+
+<!-- CONTACT SECTION -->
+    <section id="contact">
+    <h1>Contact</h1>
+    <form action=''>
+            <label for="first-name">Name: 
+                <input id="first-name" name="first-name" type="text" placeholder="Enter your Name" required />
+            </label>
+            <label for="email">Email: 
+                <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+            </label>
+            <label for="subject">Subject: 
+                <input id="subject" type="text" name="subject" placeholder="Subject" required/>
+            </label>
+
+        <label for="bio">Your message:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your messsage..."></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+        </form>
+</section>
+</body>
+</html>
