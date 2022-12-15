@@ -38,7 +38,7 @@ header {
     padding-bottom: 100px;
     background-color: rgba(0, 0, 0, 0.904);
 }
-#ul li {
+# li {
     /* background-color: aqua; */
     padding: 2%;
 }
