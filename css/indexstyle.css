@@ -18,7 +18,7 @@ header {
     background-attachment: fixed;
 }
     /* NAV MOBILE */
-#navegacion {
+#mobile-nav {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
     position: fixed;
@@ -105,7 +105,7 @@ header {
 }
 /* HOME TABLETS */
 @media screen and (min-width: 750px){
-    #navegacion {
+    #mobile-nav {
     display: none;
     }
     #tabletnav {
@@ -145,7 +145,7 @@ header {
         margin-right: 0px;
         text-align: center;
     }
-    #navegacion {
+    #mobile-nav {
         display: none;
     }
     #tabletnav {
