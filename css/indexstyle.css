@@ -20,17 +20,16 @@ header {
     /* NAV MOBILE */
 #mobile-nav {
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0);
     position: fixed;
     right: 0;
     width: 100%;
 }
 #hamburger {
-    color: black;
+    color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
 }
 #hamburger:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #00262D
 }
 #collapsibleNavbar {
     text-align: center;
@@ -38,13 +37,23 @@ header {
     padding-bottom: 100px;
     background-color: rgba(0, 0, 0, 0.904);
 }
-# li {
+#nav li {
     /* background-color: aqua; */
     padding: 2%;
 }
-#ul a {
+#nav a {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
+}
+
+#tabletnav {
+    display: none;
+}
+#verticalnav{
+    display: none;
+}
+#avatar {
+    display: none;
 }
 
 /* Contenido header */
@@ -62,15 +71,7 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
 }
-#tabletnav {
-    display: none;
-}
-#verticalnav{
-    display: none;
-}
-#avatar {
-    display: none;
-}
+
 #botones {
     /* background-color: aquamarine; */
     position: absolute;
