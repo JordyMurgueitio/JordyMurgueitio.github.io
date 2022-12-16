@@ -363,30 +363,30 @@ header {
     flex-wrap: wrap;
     width: 100%;
 }
-#development, #design, #wordpress {
+.service-box {
     /* background-color: aquamarine; */
     width: 60%;
     margin: 0 auto;
     margin-bottom: 30px;
     color: #ffffff;
 }
-#development:hover, #design:hover, #wordpress:hover {
+.service-box:hover {
 border: 1px solid white;
 border-radius: 10px;
 }
 
-#development i, #design i, #wordpress i{
+.service-box i{
     color: #fff;
     font-size: 3.4rem;
     margin-bottom: 15px;
 }
-#services h3 {
+.service-box h3 {
     color: #1f6675;
     font-size: 1.1rem;
 }
 
-
-#services #world {
+/*Second section of the service section*/
+#services .question-container {
     background-color: #00252E;
     background-image: url(../images/ocean.jpg);
     background-position: bottom;
@@ -396,20 +396,20 @@ border-radius: 10px;
     height: 250px;
     padding-top: 50px;
 }
-#services #world p {
+.question-container .question {
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 20px;
     font-size: 1.5rem;
     font-weight: 400;
 }
-#world #contact-me {
+.question-container .link-box {
     background-color: #2e515a00;
     width: 100%;
     padding: 15px;
     margin-bottom: 35px;
 }
-#world #contact-me a {
+.question-container .link-box a {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: 10px;
@@ -421,13 +421,11 @@ border-radius: 10px;
     border: 1px solid white;
     transition: .5s;
 }
-#world #contact-me a:hover {
+.question-container .link-box a:hover {
     background-color: rgb(0, 0, 0);
 }
-/* #world .servicearrow {
-    background-color: #217221;
-} */
-#world .servicearrow i {
+
+.question-container .servicearrow i {
     font-size: 2rem;
     color: #fff;
 }
@@ -444,20 +442,19 @@ border-radius: 10px;
         height: 20%;
         background-color: rgba(0, 255, 255, 0);
     }
-    #services .flex-container {
-/*         margin-bottom: 45px;
- */        background-color: #35728000;
- padding-top: 3%;
+    .services-container {
+        background-color: #35728000;
+        padding-top: 3%;
         height: 40%;
         overflow: inherit;
     }
-    #development, #design, #wordpress {
+    .service-box {
         background-color: rgba(0, 0, 0, 0);
         width:30%;
         margin: 0 auto;
         margin-bottom: 30px;
     }
-    #services #world {
+    #services .question-container {
         background-color: #00252E;
         height: 40%;
         
