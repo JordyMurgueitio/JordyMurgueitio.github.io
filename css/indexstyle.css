@@ -46,6 +46,7 @@ header {
     font-size: 1.5rem;
 }
 
+/*HIDING NAVS FOR TABLET AND LARGE*/
 #tabletnav {
     display: none;
 }
