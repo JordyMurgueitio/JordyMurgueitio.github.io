@@ -37,11 +37,11 @@ header {
     padding-bottom: 100px;
     background-color: rgba(0, 0, 0, 0.904);
 }
-#nav li {
+#mobile-nav .nav-item {
     /* background-color: aqua; */
     padding: 2%;
 }
-#nav a {
+#mobile-nav .nav-link {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
 }
