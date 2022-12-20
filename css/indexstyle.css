@@ -179,13 +179,14 @@ header {
     #verticalnav ul {
         /* background-color: aquamarine; */
         padding-left: 0px;
+        margin-bottom: 40px;
     }
     #verticalnav ul li {
         background-color: #000000;
         list-style-type: none;
         width: 100%;
         padding: 0px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     #verticalnav ul li a {
         color: rgb(255, 255, 255);
@@ -194,6 +195,20 @@ header {
     }
     #verticalnav ul li a:hover {
         color: rgb(165, 161, 161);
+    }
+
+    .icons-container {
+        background-color: #000000;
+    }
+
+    .icons-container a {
+        color: #fff;
+        font-size: 2.2em;
+        margin: 0 10px;
+    }
+
+    .icons-container a:hover {
+        color: gray;
     }
 
     /* HOME RIGHT SECTION LARGE SCREEN */
