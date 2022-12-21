@@ -500,19 +500,30 @@ border-radius: 10px;
     font-size: 2.3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#portfolio img {
-    width: 80%;
+
+.projects-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px 0px;
 }
-#personal, #marios {
-    margin-bottom: 40px;
+.project-box {
+    width: 300px;
+    border: 1px solid black;
 }
-#portfolio p {
-    background-color: #ffffff8a;
-    width: 20%;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    box-shadow: 3px 3px;
-    border-radius: 10px;
+.project-image {
+    width: 100%;
+}
+.project-title {
+    color: #000000;
+}
+.project-description {
+    color: #000000;
+}
+.project-link {
+    text-decoration: none;
 }
 #portfolio .arrow-container {
     background-color: #ffffff;
