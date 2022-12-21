@@ -204,7 +204,7 @@ header {
     .icons-container a {
         color: #fff;
         font-size: 2.2em;
-        margin: 0 10px;
+        margin: 0 15px;
     }
 
     .icons-container a:hover {
@@ -546,7 +546,7 @@ border-radius: 10px;
     background-color: #000000;
     width: 70%;
     text-align: left;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 form label {
     display: block;
@@ -563,10 +563,36 @@ form button {
     display: block;
     margin: 0 auto;
     width: 30%;
-    margin-top: 20px;
-    border-radius: 5px;
+    margin-top: 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
 }
-
+form button:hover {
+    box-shadow: 1px 1px white;
+    background-color: #00252E;
+    font-weight: bold;
+}
+.contact-icons {
+    background-color: #000000;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+}
+.contact-icons i {
+    color: #fff;
+    font-size: 2.2em;
+    margin: 0 10px;
+}
+.contact-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.contact-icons a:hover {
+    color: gray;
+}
 
 @media screen and (min-width: 1000px){
     #contact {
@@ -575,7 +601,14 @@ form button {
         text-align: center;
         height: 100vh;
     }
+    #contact h1 {
+        margin-bottom: 60px;
+    }
     #contact form {
         width: 50%;
+        margin: 0 auto;
+    }
+    .contact-icons {
+        display: none;
     }
 }
