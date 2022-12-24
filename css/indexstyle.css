@@ -185,7 +185,7 @@ header {
     }
     #avatar-container img {
         width: 100%;
-        border: 2px solid white;
+        border: 3px solid white;
         max-width: 240px;
     }
 
@@ -506,7 +506,8 @@ header {
 .project-box {
     width: 350px;
     background-color: #000000;
-    box-shadow: 5px 5px #e1e1e1;
+    border-bottom: 1px solid #212121; 
+    border-radius: 10px;
     padding-bottom: 10px;
 }
 .project-image {
