@@ -102,6 +102,10 @@ header {
     font-size: 2rem;
     color: #fff;
 }
+.home-arrow-container a:hover {
+    font-size: 2.2rem;
+    color: black;
+}
 
 
 /* HOME SECTION TABLETS */
@@ -111,7 +115,8 @@ header {
     }
     #tabletnav {
         display: block;
-        background-image: url(/images/bigdaddyd.jpg);
+        /* background-image: url(/images/bigdaddyd.jpg); */
+        background-color: #000000;
         background-size: cover;
         position: fixed;
         width: 100%;
@@ -134,7 +139,7 @@ header {
     #tabletnav ul li a {
         color: rgb(255, 255, 255);
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     #tabletnav ul li a:hover {
         color: gray;
@@ -354,14 +359,14 @@ header {
 /* MOBILE */
 
 #services {
-    background-color: #000000;
+    background-color: #ffffff;
     margin: 0px;
     /* height: 100%; */
     padding-top: 40px;
     text-align: center;
 }
 #services h1 {
-    color: #ffffff;
+    color: #000000;
     padding-top: 40px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -380,11 +385,11 @@ header {
     width: 30%;
     margin: 0 auto;
     margin-bottom: 30px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .service-box i{
-    color: #fff;
+    color: #8F6721;
     font-size: 3.4rem;
     margin-bottom: 15px;
 }
@@ -403,8 +408,8 @@ header {
 .question-container .question {
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
     font-weight: 400;
 }
 .question-container .link-box {
@@ -422,17 +427,13 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.1rem;
-    border: 1px solid white;
+    border: 2px solid white;
     transition: .5s;
 }
 .question-container .link-box a:hover {
     background-color: rgb(0, 0, 0);
 }
 
-.question-container .arrow-container i {
-    font-size: 2rem;
-    color: #fff;
-}
 
 /* SERVICES TABLETS */
 
@@ -519,7 +520,7 @@ header {
     text-decoration: none;
     color: #fff;
     background-color: #000000;
-
+    border: 1px solid white;
     padding: 1%;
     border-radius: 10px;
 }
@@ -528,13 +529,7 @@ header {
     border: 1px solid black;
     color: #000000;
 }
-#portfolio .arrow-container {
-    background-color: #000000;
-    font-size: 2rem;
-}
-#portfolio .arrow-container i {
-    color: #ffffff;
-}
+
 @media screen and (min-width: 750px) {
     .project-box {
         width: 40%;
@@ -553,7 +548,7 @@ header {
 
 /* CONTACT SECTION */
 #contact {
-    background-color: #000000;
+    background-color: #ffffff;
     padding-top: 40px;
     text-align: center;
     height: 100vh;
@@ -561,25 +556,29 @@ header {
 #contact h1 {
     font-size: 2.3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-bottom: 40px;
 }
 #contact form {
-    background-color: #000000;
+    background-color: #ffffff;
     width: 70%;
+    padding: 20px;
     text-align: left;
     margin: 0 auto 30px auto;
 }
 form label {
     display: block;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 10px;
+    background-color: #ffffff;
 }
 form input, form textarea {
     display: block;
     width: 100%;
     margin-top: 5px;
-    background-color: #ffffff;
+    background-color: #000000;
+    font-size: .9em;
+    color: white;
 }
 form button {
     display: block;
