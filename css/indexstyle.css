@@ -344,6 +344,7 @@ header {
     #aboutme {
         width: 80%;
         margin-left: 20%;
+        height: 100%;
     }
     #aboutme img {
         width: 100%;
