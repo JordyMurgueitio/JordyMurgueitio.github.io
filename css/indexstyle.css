@@ -222,7 +222,7 @@ header {
         font-size: 1.1rem;
     }
     #verticalnav ul li a:hover {
-        color: rgb(165, 161, 161);
+        color: gray;
     }
 
     .icons-container {
@@ -242,8 +242,9 @@ header {
     /* HOME RIGHT SECTION LARGE SCREEN */
     #content-section {
         background-image: url(../images/bigdaddyd.jpg);
-        background-size: cover;
-        background-position:  center;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: 20vw center;
         display: inline-block;
         width: 80%;
         height: 100%;
