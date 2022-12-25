@@ -34,18 +34,33 @@ header {
 #collapsibleNavbar {
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 100px;
-    background-color: rgba(0, 0, 0, 0.904);
+    padding-bottom: 50px;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
 }
-#mobile-nav .nav-item {
+#collapsibleNavbar ul {
+    background-color: #000000;
+    margin-bottom: 30px;
+}
+#collapsibleNavbar .nav-item {
     /* background-color: aqua; */
     padding: 2%;
 }
-#mobile-nav .nav-link {
+#collapsibleNavbar .nav-link {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
 }
-
+#collapsibleNavbar .nav-link:hover {
+    color: gray;
+    font-size: 1.5rem;
+}
+.nav-arrow-container i {
+    color: #fff;
+    font-size: 2.5em;
+}
+.nav-arrow-container i:hover {
+    color: gray;
+}
 /*HIDING NAVS FOR TABLET AND LARGE*/
 #tabletnav {
     display: none;
