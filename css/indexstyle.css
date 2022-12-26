@@ -333,18 +333,17 @@ header {
     background-color: #000000;
 }
 #aboutme .links a {
-    background-color: #000000;
+    background-color: #242222;
     padding: 9px;
     color: rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 1%;
     border: 1px solid rgb(255, 255, 255);
     transition: .5s;
     text-decoration: none;
 }
 #aboutme .links a:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #00252E;
 }
 
 
@@ -522,8 +521,7 @@ header {
 .project-box {
     width: 350px;
     background-color: #000000;
-    border-bottom: 1px solid #212121; 
-    border-radius: 10px;
+    border-bottom: 1px solid #222222; 
     padding-bottom: 10px;
 }
 .project-image {
@@ -537,13 +535,13 @@ header {
 .project-link {
     text-decoration: none;
     color: #fff;
-    background-color: #000000;
+    background-color: #1f1f1f;
     border: 1px solid white;
     padding: 1%;
     border-radius: 10px;
 }
 .project-link:hover {
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     border: 1px solid black;
     color: #000000;
 }
