@@ -187,7 +187,7 @@ header {
         top: 0;
         left: 0;
         background-color: rgb(0, 0, 0);
-        overflow-x: hidden;
+        overflow: hidden;
         margin-right: 0px;
         border-right: 1px solid rgb(255, 255, 255);
         padding-top: 10px;
@@ -200,7 +200,7 @@ header {
     }
     #avatar-container img {
         width: 100%;
-        border: 3px solid white;
+        border: 2px solid white;
         max-width: 240px;
     }
 
@@ -243,8 +243,9 @@ header {
     #content-section {
         background-image: url(../images/bigdaddyd.jpg);
         background-attachment: fixed;
-        background-size: contain;
-        background-position: 20vw center;
+        background-size: cover;
+        background-position: 10vw center;
+        background-repeat: no-repeat;
         display: inline-block;
         width: 80%;
         height: 100%;
