@@ -244,7 +244,7 @@
     <section id="contact">
         <h1>Contact</h1>
         
-        <form action=''>
+        <form onsubmit="emailSend()">
             <label for="first-name">Name: 
                 <input id="first-name" name="first-name" type="text" placeholder="Enter your Name" required />
             </label>
@@ -271,5 +271,7 @@
 
     <!-- LINK TO JS -->
     <script src="./index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 </html>
