@@ -1,0 +1,126 @@
+$main-color: rgb(0, 0, 0);
+
+*{
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+// HOME SECTION MOBILE
+
+header {
+    height: 100%;
+    text-align: center;
+    background: {
+        color: $main-color;
+        image: url(../images/bigdaddyd.jpg);
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+        attachment: fixed;
+    }; 
+    // nav for mobile
+    #mobile-nav {
+        z-index: 2;
+        position: fixed;
+        right: 0;
+        width: 100%;
+        #hamburger {
+            color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        #hamburger:hover {
+            background-color: #00262D
+        }
+        #collapsibleNavbar {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: rgb(0, 0, 0);
+            height: 100vh;
+            ul {
+                background-color: #000000;
+                margin-bottom: 30px;
+                .nav-item {
+                    padding: 2%;
+                    .nav-link {
+                        color: rgb(255, 255, 255);
+                        font-size: 1.5rem;
+                    }
+                    .nav-link:hover {
+                        color: gray;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .nav-arrow-container i {
+                color: #fff;
+                font-size: 2.5em;
+            }
+            .nav-arrow-container i:hover {
+                color: gray;
+            }
+        }
+    }
+    /*HIDING NAVS FOR TABLET AND LARGE*/
+    #tabletnav {
+        display: none;
+    }
+    #verticalnav{
+        display: none;
+    }
+    /* HOME SECTION CONTENT */
+    #name-container {
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        .myName{
+            font-size: 250%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+        }
+        .proffession {
+            font-size: 1.1em;
+        }
+    }
+    #home-button-container {
+        position: absolute;
+        bottom:  13%;
+        width: 100%;
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: #fff;
+            transition: .5s;
+        }
+        button:hover {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+        }
+    }
+    .home-arrow-container {
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        width: 100%;
+        a {
+            font-size: 2rem;
+            color: #fff;
+        }
+        a:hover {
+            font-size: 2.2rem;
+            color: black;
+        }
+    }
+}
+
+/* HOME SECTION TABLETS */
+
