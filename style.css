@@ -117,5 +117,104 @@ header .home-arrow-container a:hover {
 }
 
 /* HOME SECTION TABLETS */
+@media screen and (min-width: 750px) {
+  #mobile-nav {
+    display: none;
+  }
+  #tabletnav {
+    display: block;
+    /* background-image: url(/images/bigdaddyd.jpg); */
+    background-color: #000000;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid gray;
+  }
+  #tabletnav ul {
+    /* background-color: blueviolet; */
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  #tabletnav ul li {
+    /* background-color: antiquewhite; */
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+  }
+  #tabletnav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  #tabletnav ul li a:hover {
+    color: gray;
+  }
+}
+/* HOME SECTION MEDIUM */
+@media screen and (min-width: 1000px) {
+  header {
+    background-image: none;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    margin-right: 0px;
+    text-align: center;
+  }
+  header #mobile-nav {
+    display: none;
+  }
+  header #tabletnav {
+    display: none;
+  }
+  header #verticalnav {
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    margin-right: 0px;
+    border-right: 1px solid rgb(255, 255, 255);
+    padding-top: 10px;
+  }
+  header #verticalnav #avatar-container {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    width: 95%;
+    margin-bottom: 40px;
+  }
+  header #verticalnav #avatar-container img {
+    width: 100%;
+    border: 2px solid white;
+    max-width: 240px;
+  }
+  header #verticalnav ul {
+    /* background-color: aquamarine; */
+    padding-left: 0px;
+    margin-bottom: 40px;
+  }
+  header #verticalnav ul li {
+    background-color: #000000;
+    list-style-type: none;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  header #verticalnav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  header #verticalnav ul li a:hover {
+    color: gray;
+  }
+  header #verticalnav .icons-container {
+    background-color: #000000;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
