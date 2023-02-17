@@ -244,6 +244,95 @@ header {
             height: 100%;
             margin-left: 20%;
             margin-right: 0px;
+            #name-container {
+                /* background-color: aqua; */
+                text-align: center;
+                color: rgb(255, 255, 255);
+                position: relative;
+                top: 15%;
+                /* position: fixed; */
+                width: 100%;
+                h1{
+                    font-size: 250%;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-weight: 300;
+                }
+            }
+            #home-button-container {
+                /* background-color: aquamarine; */
+                position: relative;
+                top: 60%;
+                width: 40%;
+                /* position: static; */
+                margin: 0 auto;
+            }
+            .home-arrow-container {
+                position: relative;
+                top: 65%;
+                text-align: center;
+                width: 20%;
+                margin: 0 auto;
+                a {
+                    font-size: 2rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+/* About me */
+/* Mobile */
+
+#aboutme {
+    background-color: rgb(0, 0, 0);
+    /* height: 100%; */
+    margin: 0;
+    text-align: center;
+    padding: 40px 0 40px 0;
+    h1 {
+        color: rgb(255, 255, 255);
+        margin-bottom: 40px;
+        /* background-color: rgb(117, 91, 56); */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.2rem;
+    }
+    figure {
+        /* background-color: rgb(0, 0, 0); */
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        img {
+            width: 100%;
+            max-width: 220px;
+            border: #fff 3px solid;
+        }
+    }
+    .text-container {
+        background-color: rgb(0, 0, 0);
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        text-align: justify;
+        p {
+            color: rgb(255, 255, 255);
+        }
+    }
+    .links {
+        background-color: #000000;
+        a {
+            background-color: #242222;
+            padding: 9px;
+            color: rgb(255, 255, 255);
+            border-radius: 15px;
+            margin: 1%;
+            border: 1px solid rgb(255, 255, 255);
+            transition: .5s;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #00252E;
         }
     }
 }
