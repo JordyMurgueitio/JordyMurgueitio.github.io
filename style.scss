@@ -222,7 +222,28 @@ header {
             }
             .icons-container {
                 background-color: #000000;
+                a {
+                    color: #fff;
+                    font-size: 2.2em;
+                    margin: 0 15px;
+                }
+                a:hover {
+                    color: gray;
+                }
             }
+        }
+        /* HOME RIGHT SECTION LARGE SCREEN */
+        #content-section {
+            background-image: url(../images/bigdaddyd.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 10vw center;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 80%;
+            height: 100%;
+            margin-left: 20%;
+            margin-right: 0px;
         }
     }
 }
