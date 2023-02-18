@@ -336,3 +336,32 @@ header {
         }
     }
 }
+
+/* ABOUT ME TABLETS */
+@media screen and (min-width: 750px){
+    #aboutme img {
+        width: 100%;
+        max-width: 220px;
+        border: #fff 3px solid;
+    }
+}
+
+/* About ME MEDIUM */
+@media screen and (min-width: 1000px){
+    #aboutme {
+        width: 80%;
+        margin-left: 20%;
+        padding-bottom: 100px;
+        img {
+            width: 100%;
+            max-width: 220px;
+            border: #fff 3px solid;
+        }
+    }
+    .text-container {
+        width: 60%;
+    }
+}
+
+/* SERVICES SECTION */
+/* MOBILE */
