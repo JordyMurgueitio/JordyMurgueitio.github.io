@@ -14,13 +14,13 @@ header {
     height: 100%;
     text-align: center;
     background: {
-        color: $main-color;
+        color: black;
         image: url(../images/bigdaddyd.jpg);
         repeat: no-repeat;
         position: center;
         size: cover;
         attachment: fixed;
-    }; 
+    }
     // nav for mobile
     #mobile-nav {
         z-index: 2;
@@ -125,41 +125,42 @@ header {
 /* HOME SECTION TABLETS */
 
 @media screen and (min-width: 750px){
-    #mobile-nav {
-    display: none;
-    }
-    #tabletnav {
-        display: block;
-        /* background-image: url(/images/bigdaddyd.jpg); */
-        background-color: #000000;
-        background-size: cover;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 2;
-        border-bottom: 1px solid gray;
-        ul {
-            /* background-color: blueviolet; */
-            padding-left: 0px;
-            padding-top: 20px;
-            li {
-                /* background-color: antiquewhite; */
-                list-style-type: none;
-                display: inline-block;  
-                width: 12%;
-                a {
-                    color: rgb(255, 255, 255);
-                    text-decoration: none;
-                    font-size: 1.1rem;
-                }
-                a:hover {
-                    color: gray;
+    header {
+        #mobile-nav {
+        display: none;
+        }
+        #tabletnav {
+            display: block;
+            /* background-image: url(/images/bigdaddyd.jpg); */
+            background-color: #000000;
+            background-size: cover;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 2;
+            border-bottom: 1px solid gray;
+            ul {
+                /* background-color: blueviolet; */
+                padding-left: 0px;
+                padding-top: 20px;
+                li {
+                    /* background-color: antiquewhite; */
+                    list-style-type: none;
+                    display: inline-block;  
+                    width: 12%;
+                    a {
+                        color: rgb(255, 255, 255);
+                        text-decoration: none;
+                        font-size: 1.1rem;
+                    }
+                    a:hover {
+                        color: gray;
+                    }
                 }
             }
         }
     }
 }
-
 /* HOME SECTION MEDIUM */
 
 

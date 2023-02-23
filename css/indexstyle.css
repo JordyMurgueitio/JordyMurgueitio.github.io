@@ -130,7 +130,7 @@ header {
     }
     #tabletnav {
         display: block;
-        /* background-image: url(/images/bigdaddyd.jpg); */
+        /* background-image: url(/images/bigdaddyd.jpg);  */
         background-color: #000000;
         background-size: cover;
         position: fixed;
