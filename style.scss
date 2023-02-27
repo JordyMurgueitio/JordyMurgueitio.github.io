@@ -8,8 +8,7 @@ body {
     margin: 0;
 }
 
-// HOME SECTION MOBILE
-
+// header mobile styles
 header {
     height: 100%;
     text-align: center;
@@ -21,7 +20,7 @@ header {
         size: cover;
         attachment: fixed;
     }
-    @media screen and (min-width: 1000px){
+    @media screen and (min-width: 1000px){  // header laptop styles
         background-image: none;
         height: 100vh;
         margin: 0;
@@ -29,12 +28,11 @@ header {
         margin-right: 0px;
         text-align: center;
     }
-    /*HIDING NAVS FOR TABLET AND LARGE*/
+    // hiding tablet nav for mobile
     #tabletnav{
         display: none;
-        @media screen and (min-width: 750px){  
+        @media screen and (min-width: 750px){   // nav styles for tablets
             display: block;
-            /* background-image: url(/images/bigdaddyd.jpg); */
             background-color: #000000;
             background-size: cover;
             position: fixed;
@@ -43,11 +41,9 @@ header {
             z-index: 2;
             border-bottom: 1px solid gray;
             ul {
-                /* background-color: blueviolet; */
                 padding-left: 0px;
                 padding-top: 20px;
                 li {
-                    /* background-color: antiquewhite; */
                     list-style-type: none;
                     display: inline-block;  
                     width: 12%;
@@ -62,14 +58,14 @@ header {
                 }
             }
         }
-        @media screen and (min-width: 1000px){ 
+        @media screen and (min-width: 1000px){  // hiding nav for laptops
             display: none;
         }
     }
-    
+    // hiding vertical nav for mobile
     #verticalnav{
         display: none;
-        @media screen and (min-width: 1000px){
+        @media screen and (min-width: 1000px){  // vertical nav styles for laptops
             display: inline-block;
             height: 100%;
             width: 20%;

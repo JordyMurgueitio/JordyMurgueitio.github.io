@@ -16,7 +16,6 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  /*HIDING NAVS FOR TABLET AND LARGE*/
   /* HOME SECTION CONTENT */
 }
 @media screen and (min-width: 1000px) {
@@ -35,7 +34,6 @@ header #tabletnav {
 @media screen and (min-width: 750px) {
   header #tabletnav {
     display: block;
-    /* background-image: url(/images/bigdaddyd.jpg); */
     background-color: #000000;
     background-size: cover;
     position: fixed;
@@ -45,12 +43,10 @@ header #tabletnav {
     border-bottom: 1px solid gray;
   }
   header #tabletnav ul {
-    /* background-color: blueviolet; */
     padding-left: 0px;
     padding-top: 20px;
   }
   header #tabletnav ul li {
-    /* background-color: antiquewhite; */
     list-style-type: none;
     display: inline-block;
     width: 12%;
