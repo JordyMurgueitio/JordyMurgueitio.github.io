@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-// header mobile styles
+
 header {
     height: 100%;
     text-align: center;
@@ -20,19 +20,73 @@ header {
         size: cover;
         attachment: fixed;
     }
-    @media screen and (min-width: 1000px){  // header laptop styles
-        background-image: none;
-        height: 100vh;
-        margin: 0;
-        background-color: #000000;
-        margin-right: 0px;
-        text-align: center;
-    }
-    // hiding tablet nav for mobile
+    /*HIDING NAVS FOR TABLET AND LARGE*/
     #tabletnav{
         display: none;
-        @media screen and (min-width: 750px){   // nav styles for tablets
+    }
+    #verticalnav{
+        display: none;
+    }
+    /* HOME SECTION CONTENT */
+    #header-content {
+        .name-box {
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            .myName{
+                font-size: 250%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: 300;
+            }
+            .proffession {
+                font-size: 1.1em;
+            }
+        }
+        #home-button-container {
+            position: absolute;
+            bottom:  13%;
+            width: 100%;
+            button {
+                display: block;
+                margin: 0 auto;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 10px;
+                border: 2px solid white;
+                border-radius: 5px;
+                color: #fff;
+                transition: .5s;
+            }
+            button:hover {
+                background-color: rgb(0, 0, 0);
+                color: #fff;
+            }
+        }
+        .home-arrow-container {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+            a {
+                font-size: 2rem;
+                color: #fff;
+            }
+            a:hover {
+                font-size: 2.2rem;
+                color: black;
+            }
+        }
+    }
+}
+
+
+/* HOME SECTION TABLETS */
+@media screen and (min-width: 750px){
+    header {
+        #tabletnav {
             display: block;
+            /* background-image: url(/images/bigdaddyd.jpg); */
             background-color: #000000;
             background-size: cover;
             position: fixed;
@@ -41,9 +95,11 @@ header {
             z-index: 2;
             border-bottom: 1px solid gray;
             ul {
+                /* background-color: blueviolet; */
                 padding-left: 0px;
                 padding-top: 20px;
                 li {
+                    /* background-color: antiquewhite; */
                     list-style-type: none;
                     display: inline-block;  
                     width: 12%;
@@ -58,14 +114,23 @@ header {
                 }
             }
         }
-        @media screen and (min-width: 1000px){  // hiding nav for laptops
+    }
+}
+
+
+/* HOME SECTION MEDIUM */
+@media screen and (min-width: 1000px){
+    header {
+        background-image: none;
+        height: 100vh;
+        margin: 0;
+        background-color: #000000;
+        margin-right: 0px;
+        text-align: center;
+        #tabletnav{
             display: none;
         }
-    }
-    // hiding vertical nav for mobile
-    #verticalnav{
-        display: none;
-        @media screen and (min-width: 1000px){  // vertical nav styles for laptops
+        #verticalnav{
             display: inline-block;
             height: 100%;
             width: 20%;
@@ -120,58 +185,8 @@ header {
                 }
             }
         }
-    }
-    /* HOME SECTION CONTENT */
-    #header-content {
-        .name-box {
-            text-align: center;
-            color: #fff;
-            position: absolute;
-            top: 15%;
-            width: 100%;
-            .myName{
-                font-size: 250%;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                font-weight: 300;
-            }
-            .proffession {
-                font-size: 1.1em;
-            }
-        }
-        #home-button-container {
-            position: absolute;
-            bottom:  13%;
-            width: 100%;
-            button {
-                display: block;
-                margin: 0 auto;
-                background-color: rgba(0, 0, 0, 0.5);
-                padding: 10px 10px;
-                border: 2px solid white;
-                border-radius: 5px;
-                color: #fff;
-                transition: .5s;
-            }
-            button:hover {
-                background-color: rgb(0, 0, 0);
-                color: #fff;
-            }
-        }
-        .home-arrow-container {
-            position: absolute;
-            bottom: 10px;
-            text-align: center;
-            width: 100%;
-            a {
-                font-size: 2rem;
-                color: #fff;
-            }
-            a:hover {
-                font-size: 2.2rem;
-                color: black;
-            }
-        }
-        @media screen and (min-width: 1000px){
+        /* HOME RIGHT SECTION LARGE SCREEN */
+        #header-content {
             background-image: url(../images/bigdaddyd.jpg);
             background-attachment: fixed;
             background-size: cover;
@@ -190,7 +205,7 @@ header {
                 top: 15%;
                 /* position: fixed; */
                 width: 100%;
-                h1{
+                .myName{
                     font-size: 250%;
                     font-family: Georgia, 'Times New Roman', Times, serif;
                     font-weight: 300;
@@ -218,6 +233,7 @@ header {
         }
     }
 }
+
 
 
 /* About me */
