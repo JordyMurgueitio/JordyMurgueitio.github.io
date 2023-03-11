@@ -25,27 +25,27 @@ header #tabletnav {
 header #verticalnav {
   display: none;
 }
-header #header-content .name-box {
+header #header-info-container .name-box {
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   top: 15%;
   width: 100%;
 }
-header #header-content .name-box .myName {
+header #header-info-container .name-box .myName {
   font-size: 250%;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 300;
 }
-header #header-content .name-box .proffession {
+header #header-info-container .name-box .proffession {
   font-size: 1.1em;
 }
-header #header-content #home-button-container {
+header #header-info-container #home-button-container {
   position: absolute;
   bottom: 13%;
   width: 100%;
 }
-header #header-content #home-button-container button {
+header #header-info-container #home-button-container button {
   display: block;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
@@ -55,21 +55,20 @@ header #header-content #home-button-container button {
   color: #fff;
   transition: 0.5s;
 }
-header #header-content #home-button-container button:hover {
+header #header-info-container #home-button-container button:hover {
   background-color: rgb(0, 0, 0);
-  color: #fff;
 }
-header #header-content .home-arrow-container {
+header #header-info-container .home-arrow-container {
   position: absolute;
   bottom: 10px;
   text-align: center;
   width: 100%;
 }
-header #header-content .home-arrow-container a {
+header #header-info-container .home-arrow-container a {
   font-size: 2rem;
   color: #fff;
 }
-header #header-content .home-arrow-container a:hover {
+header #header-info-container .home-arrow-container a:hover {
   font-size: 2.2rem;
   color: black;
 }
@@ -78,9 +77,7 @@ header #header-content .home-arrow-container a:hover {
 @media screen and (min-width: 750px) {
   header #tabletnav {
     display: block;
-    /* background-image: url(/images/bigdaddyd.jpg); */
     background-color: #000000;
-    background-size: cover;
     position: fixed;
     width: 100%;
     top: 0;
@@ -88,12 +85,10 @@ header #header-content .home-arrow-container a:hover {
     border-bottom: 1px solid gray;
   }
   header #tabletnav ul {
-    /* background-color: blueviolet; */
     padding-left: 0px;
     padding-top: 20px;
   }
   header #tabletnav ul li {
-    /* background-color: antiquewhite; */
     list-style-type: none;
     display: inline-block;
     width: 12%;
@@ -114,7 +109,6 @@ header #header-content .home-arrow-container a:hover {
     height: 100vh;
     margin: 0;
     background-color: #000000;
-    margin-right: 0px;
     text-align: center;
     /* HOME RIGHT SECTION LARGE SCREEN */
   }
@@ -176,7 +170,7 @@ header #header-content .home-arrow-container a:hover {
   header #verticalnav .icons-container a:hover {
     color: gray;
   }
-  header #header-content {
+  header #header-info-container {
     background-image: url(../images/bigdaddyd.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -188,7 +182,7 @@ header #header-content .home-arrow-container a:hover {
     margin-left: 20%;
     margin-right: 0px;
   }
-  header #header-content .name-box {
+  header #header-info-container .name-box {
     /* background-color: aqua; */
     text-align: center;
     color: rgb(255, 255, 255);
@@ -197,12 +191,12 @@ header #header-content .home-arrow-container a:hover {
     /* position: fixed; */
     width: 100%;
   }
-  header #header-content .name-box .myName {
+  header #header-info-container .name-box .myName {
     font-size: 250%;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 300;
   }
-  header #header-content #home-button-container {
+  header #header-info-container #home-button-container {
     /* background-color: aquamarine; */
     position: relative;
     top: 60%;
@@ -210,14 +204,14 @@ header #header-content .home-arrow-container a:hover {
     /* position: static; */
     margin: 0 auto;
   }
-  header #header-content .home-arrow-container {
+  header #header-info-container .home-arrow-container {
     position: relative;
     top: 65%;
     text-align: center;
     width: 20%;
     margin: 0 auto;
   }
-  header #header-content .home-arrow-container a {
+  header #header-info-container .home-arrow-container a {
     font-size: 2rem;
     color: #fff;
   }
