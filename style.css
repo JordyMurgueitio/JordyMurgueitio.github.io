@@ -218,45 +218,45 @@ header #header-info-container .home-arrow-container a:hover {
 }
 /* About me */
 /* Mobile */
-#aboutme {
+#about-me-section {
   background-color: rgb(0, 0, 0);
   /* height: 100%; */
   margin: 0;
   text-align: center;
   padding: 40px 0 40px 0;
 }
-#aboutme h1 {
+#about-me-section h1 {
   color: rgb(255, 255, 255);
   margin-bottom: 40px;
   /* background-color: rgb(117, 91, 56); */
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2.2rem;
 }
-#aboutme figure {
+#about-me-section figure {
   /* background-color: rgb(0, 0, 0); */
   width: 80%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
-#aboutme figure img {
+#about-me-section figure img {
   width: 100%;
   max-width: 220px;
   border: #fff 3px solid;
 }
-#aboutme .text-container {
+#about-me-section .text-container {
   background-color: rgb(0, 0, 0);
   width: 80%;
   margin: 0 auto;
   margin-bottom: 60px;
   text-align: justify;
 }
-#aboutme .text-container p {
+#about-me-section .text-container p {
   color: rgb(255, 255, 255);
 }
-#aboutme .links {
+#about-me-section .links {
   background-color: #000000;
 }
-#aboutme .links a {
+#about-me-section .links a {
   background-color: #242222;
   padding: 9px;
   color: rgb(255, 255, 255);
@@ -266,13 +266,13 @@ header #header-info-container .home-arrow-container a:hover {
   transition: 0.5s;
   text-decoration: none;
 }
-#aboutme .links a:hover {
+#about-me-section .links a:hover {
   background-color: #00252E;
 }
 
 /* ABOUT ME TABLETS */
 @media screen and (min-width: 750px) {
-  #aboutme img {
+  #about-me-section img {
     width: 100%;
     max-width: 220px;
     border: #fff 3px solid;
@@ -280,12 +280,12 @@ header #header-info-container .home-arrow-container a:hover {
 }
 /* About ME MEDIUM */
 @media screen and (min-width: 1000px) {
-  #aboutme {
+  #about-me-section {
     width: 80%;
     margin-left: 20%;
     padding-bottom: 100px;
   }
-  #aboutme img {
+  #about-me-section img {
     width: 100%;
     max-width: 220px;
     border: #fff 3px solid;
@@ -294,16 +294,16 @@ header #header-info-container .home-arrow-container a:hover {
     width: 60%;
   }
 }
-/* SERVICES SECTION */
+/* TOOLS SECTION */
 /* MOBILE */
-#services {
+#tools-section {
   background-color: #ffffff;
   margin: 0px;
   /* height: 100%; */
   padding-top: 40px;
   text-align: center;
 }
-#services h1 {
+#tools-section h1 {
   color: #000000;
   padding-top: 40px;
   text-align: center;
@@ -312,25 +312,25 @@ header #header-info-container .home-arrow-container a:hover {
   margin-bottom: 80px;
   /* background-color: #00252E; */
 }
-#services .services-container {
+#tools-section .services-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   width: 100%;
 }
-#services .services-container .service-box {
+#tools-section .services-container .service-box {
   width: 30%;
   margin: 0 auto;
   margin-bottom: 30px;
   color: #000000;
 }
-#services .services-container .service-box i {
+#tools-section .services-container .service-box i {
   color: #8F6721;
   font-size: 3.4rem;
   margin-bottom: 15px;
 }
-#services .question-container {
+#tools-section .question-container {
   background-color: #00252E;
   background-image: url(../images/ocean.jpg);
   background-position: bottom;
@@ -340,20 +340,20 @@ header #header-info-container .home-arrow-container a:hover {
   height: 250px;
   padding-top: 50px;
 }
-#services .question-container .question {
+#tools-section .question-container .question {
   color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-bottom: 30px;
   font-size: 1.8rem;
   font-weight: 400;
 }
-#services .question-container .link-box {
+#tools-section .question-container .link-box {
   background-color: rgba(46, 81, 90, 0);
   width: 100%;
   padding: 15px;
   margin-bottom: 35px;
 }
-#services .question-container .link-box a {
+#tools-section .question-container .link-box a {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: 10px;
@@ -365,60 +365,60 @@ header #header-info-container .home-arrow-container a:hover {
   border: 2px solid white;
   transition: 0.5s;
 }
-#services .question-container .link-box a:hover {
+#tools-section .question-container .link-box a:hover {
   background-color: rgb(0, 0, 0);
 }
 
-/* SERVICES TABLETS */
+/* TOOLS SECTION TABLETS */
 @media screen and (min-width: 750px) {
-  #services {
+  #tools-section {
     height: 100vh;
   }
-  #services h1 {
+  #tools-section h1 {
     padding-top: 40px;
     margin-bottom: 0px;
     height: 20%;
     background-color: rgba(0, 255, 255, 0);
   }
-  #services .services-container {
+  #tools-section .services-container {
     background-color: rgba(53, 114, 128, 0);
     padding-top: 3%;
     height: 40%;
     align-content: center;
     overflow: inherit;
   }
-  #services .services-container .service-box {
+  #tools-section .services-container .service-box {
     background-color: rgba(0, 0, 0, 0);
     width: 20%;
     margin: 0 auto;
     margin-bottom: 30px;
   }
-  #services .question-container {
+  #tools-section .question-container {
     background-color: #00252E;
     height: 40%;
   }
 }
-/* SERVICES MEDIUM */
+/* TOOLS SECTION MEDIUM */
 @media screen and (min-width: 1000px) {
-  #services {
+  #tools-section {
     margin-left: 20%;
     width: 80%;
     height: 100vh;
   }
 }
 /* PORTFOLIO SECTION */
-#portfolio {
+#portfolio-section {
   padding: 80px 0 80px 0;
   text-align: center;
   background-color: #000000;
 }
-#portfolio h1 {
+#portfolio-section h1 {
   color: #fff;
   margin-bottom: 60px;
   font-size: 2.3rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-#portfolio .projects-container {
+#portfolio-section .projects-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -427,21 +427,21 @@ header #header-info-container .home-arrow-container a:hover {
   width: 95%;
   margin: 0 auto 40px auto;
 }
-#portfolio .projects-container .project-box {
+#portfolio-section .projects-container .project-box {
   width: 350px;
   background-color: #000000;
   border-bottom: 1px solid #222222;
   padding-bottom: 10px;
 }
-#portfolio .projects-container .project-box .project-image {
+#portfolio-section .projects-container .project-box .project-image {
   width: 100%;
   margin-bottom: 20px;
 }
-#portfolio .projects-container .project-box .project-title {
+#portfolio-section .projects-container .project-box .project-title {
   color: #ffffff;
   margin-bottom: 20px;
 }
-#portfolio .projects-container .project-box .project-link {
+#portfolio-section .projects-container .project-box .project-link {
   text-decoration: none;
   color: #fff;
   background-color: #1f1f1f;
@@ -449,7 +449,7 @@ header #header-info-container .home-arrow-container a:hover {
   padding: 1%;
   border-radius: 10px;
 }
-#portfolio .projects-container .project-box .project-link:hover {
+#portfolio-section .projects-container .project-box .project-link:hover {
   background-color: #ffffff;
   border: 1px solid black;
   color: #000000;
@@ -461,7 +461,7 @@ header #header-info-container .home-arrow-container a:hover {
   }
 }
 @media screen and (min-width: 1000px) {
-  #portfolio {
+  #portfolio-section {
     margin-left: 20%;
     width: 80%;
     text-align: center;
@@ -471,32 +471,32 @@ header #header-info-container .home-arrow-container a:hover {
   }
 }
 /* CONTACT SECTION */
-#contact {
+#contact-section {
   background-color: #ffffff;
   padding-top: 40px;
   text-align: center;
   height: 100vh;
 }
-#contact h1 {
+#contact-section h1 {
   font-size: 2.3rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(0, 0, 0);
   margin-bottom: 40px;
 }
-#contact form {
+#contact-section form {
   background-color: #ffffff;
   width: 70%;
   padding: 20px;
   text-align: left;
   margin: 0 auto 90px auto;
 }
-#contact form label {
+#contact-section form label {
   display: block;
   color: #000000;
   margin-bottom: 10px;
   background-color: #ffffff;
 }
-#contact form input, #contact form textarea {
+#contact-section form input, #contact-section form textarea {
   display: block;
   width: 100%;
   margin-top: 5px;
@@ -504,7 +504,7 @@ header #header-info-container .home-arrow-container a:hover {
   font-size: 0.9em;
   color: white;
 }
-#contact form button {
+#contact-section form button {
   display: block;
   margin: 0 auto;
   width: 30%;
@@ -515,45 +515,45 @@ header #header-info-container .home-arrow-container a:hover {
   background-color: rgb(32, 32, 32);
   color: #fff;
 }
-#contact form button:hover {
+#contact-section form button:hover {
   box-shadow: 1px 1px white;
   background-color: #00252E;
   font-weight: bold;
 }
-#contact .contact-icons {
+#contact-section .contact-icons {
   background-color: #000000;
   border-top: 1px solid gray;
   padding-top: 20px;
 }
-#contact .contact-icons a {
+#contact-section .contact-icons a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.5em;
 }
-#contact .contact-icons a i {
+#contact-section .contact-icons a i {
   color: rgb(255, 255, 255);
   font-size: 2.2em;
   margin: 0 10px;
 }
-#contact .contact-icons a:hover {
+#contact-section .contact-icons a:hover {
   color: gray;
 }
 
 @media screen and (min-width: 1000px) {
-  #contact {
+  #contact-section {
     margin-left: 20%;
     width: 80%;
     text-align: center;
     height: 100vh;
   }
-  #contact h1 {
+  #contact-section h1 {
     margin-bottom: 60px;
   }
-  #contact form {
+  #contact-section form {
     width: 50%;
     margin: 0 auto;
   }
-  #contact .contact-icons {
+  #contact-section .contact-icons {
     display: none;
   }
 }
