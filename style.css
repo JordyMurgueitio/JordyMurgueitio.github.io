@@ -106,93 +106,102 @@ header #header-info-container .home-arrow-container a:hover {
 /* About me */
 /* Mobile */
 #about-me-section {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(243, 234, 234);
   /* height: 100%; */
   margin: 0;
   text-align: center;
-  padding: 40px 0 40px 0;
+  padding: 40px 0 0 0;
 }
 #about-me-section h1 {
   color: rgb(0, 0, 0);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   /* background-color: rgb(117, 91, 56); */
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2.2rem;
 }
-#about-me-section figure {
-  /* background-color: rgb(0, 0, 0); */
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 40px;
+#about-me-section .image-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#about-me-section figure img {
+#about-me-section .image-text-container figure {
+  background-color: rgb(243, 234, 234);
+  width: 80%;
+  margin: 0 0 40px 0;
+}
+#about-me-section .image-text-container figure img {
   width: 100%;
-  max-width: 220px;
-  border: #000000 3px solid;
+  max-width: 240px;
+  border: #ffffff 3px solid;
 }
-#about-me-section .text-container {
+#about-me-section .image-text-container .text-container {
+  background-color: rgb(243, 234, 234);
   width: 80%;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  text-align: justify;
 }
-#about-me-section .text-container p {
+#about-me-section .image-text-container .text-container p {
   color: rgb(0, 0, 0);
+  margin-bottom: 30px;
 }
-#about-me-section .links a {
+#about-me-section .image-text-container .text-container .links a {
   background-color: #242222;
   padding: 9px;
   color: rgb(255, 255, 255);
   border-radius: 15px;
-  margin: 1%;
   border: 1px solid rgb(255, 255, 255);
   transition: 0.5s;
   text-decoration: none;
 }
-#about-me-section .links a:hover {
+#about-me-section .image-text-container .text-container .links a:hover {
   background-color: #00252E;
 }
 
 /* ABOUT ME TABLETS */
 @media screen and (min-width: 750px) {
-  #about-me-section img {
+  #about-me-section {
+    padding: 40px 0;
+  }
+  #about-me-section .image-text-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(243, 234, 234);
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #about-me-section .image-text-container figure {
+    margin: 0;
+    width: 40%;
+  }
+  #about-me-section .image-text-container figure img {
     width: 100%;
-    max-width: 220px;
-    border: #fff 3px solid;
+    max-width: 260px;
+    border: #ffffff 3px solid;
+  }
+  #about-me-section .image-text-container .text-container {
+    width: 50%;
+    margin: 0;
   }
 }
 /* About ME MEDIUM */
 @media screen and (min-width: 1000px) {
   #about-me-section {
     width: 100%;
-    padding-bottom: 100px;
-  }
-  #about-me-section .image-text-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #ffffff;
-    align-items: center;
+    padding: 40px 0;
   }
   #about-me-section .image-text-container figure {
     width: 40%;
-    background-color: #ffffff;
     margin: 0;
   }
-  #about-me-section .image-text-container figure img {
-    width: 100%;
-    max-width: 220px;
-    border: #fff 3px solid;
-  }
   #about-me-section .image-text-container .text-container {
-    width: 40%;
+    width: 50%;
     margin: 0;
   }
 }
 /* TOOLS SECTION */
 /* MOBILE */
 #tools-section {
-  background-color: #ffffff;
+  background-color: rgb(51, 49, 49);
   margin: 0px;
   /* height: 100%; */
   padding-top: 40px;
