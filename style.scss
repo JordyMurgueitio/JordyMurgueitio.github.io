@@ -122,13 +122,13 @@ header {
 /* Mobile */
 
 #about-me-section {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     /* height: 100%; */
     margin: 0;
     text-align: center;
     padding: 40px 0 40px 0;
     h1 {
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         margin-bottom: 40px;
         /* background-color: rgb(117, 91, 56); */
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -142,21 +142,19 @@ header {
         img {
             width: 100%;
             max-width: 220px;
-            border: #fff 3px solid;
+            border: #000000 3px solid;
         }
     }
     .text-container {
-        background-color: rgb(0, 0, 0);
         width: 80%;
         margin: 0 auto;
         margin-bottom: 60px;
         text-align: justify;
         p {
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
         }
     }
     .links {
-        background-color: #000000;
         a {
             background-color: #242222;
             padding: 9px;
@@ -185,17 +183,29 @@ header {
 /* About ME MEDIUM */
 @media screen and (min-width: 1000px){
     #about-me-section {
-        width: 80%;
-        margin-left: 20%;
+        width: 100%;
         padding-bottom: 100px;
-        img {
-            width: 100%;
-            max-width: 220px;
-            border: #fff 3px solid;
+        .image-text-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            background-color: #ffffff;
+            align-items: center;
+            figure {
+                width: 40%;
+                background-color: #ffffff;
+                margin: 0;
+                img {
+                    width: 100%;
+                    max-width: 220px;
+                    border: #fff 3px solid;
+                }
+            }
+            .text-container {
+                width: 40%;
+                margin: 0;
+            }
         }
-    }
-    .text-container {
-        width: 60%;
     }
 }
 
@@ -309,8 +319,6 @@ header {
 /* TOOLS SECTION MEDIUM */
 @media screen and (min-width: 1000px){
     #tools-section {
-        margin-left: 20%;
-        width: 80%;
         height: 100vh;
     }
 }
@@ -320,9 +328,9 @@ header {
 #portfolio-section {
     padding: 80px 0 80px 0;
     text-align: center;
-    background-color: #000000;
+    background-color: #ffffff;
     h1 {
-        color: #fff;
+        color: #000000;
         margin-bottom: 60px;
         font-size: 2.3rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -373,8 +381,6 @@ header {
 // PORTFOLIO SECTION LAPTOP
 @media screen and (min-width: 1000px){
     #portfolio-section {
-        margin-left: 20%;
-        width: 80%;
         text-align: center;
     }
     .project-box {
@@ -454,10 +460,7 @@ header {
 }
 @media screen and (min-width: 1000px){
     #contact-section {
-        margin-left: 20%;
-        width: 80%;
         text-align: center;
-        height: 100vh;
         h1 {
             margin-bottom: 60px;
         }
@@ -466,7 +469,7 @@ header {
             margin: 0 auto;
         }
         .contact-icons {
-            display: none;
+            display: block;
         }
     }
 }
