@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Link to fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link to google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Link to my stylesheet -->
+    <link rel="stylesheet" href="./css/menustyle.css">
+
+    <script src="./jasvascript.js"></script>
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <figure id="logo">
+            <a href="./home.html">
+            <img src="./images/logo1.jpg" alt="logo" class="rounded-circle">
+            </a>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./menu.html" class="active">Menu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.google.com/" class="google" target="_blank"><i class="fa fa-google"></i></a>
+            <a href="https://www.youtube.com/" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+        </div>
+    </header>
+    <main>
+        <section class="top">
+        <h1>Our Menu</h1>
+        <hr>
+        <div>
+            <button id="book" onclick="openForm()">Book a Table</button>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form action='./confirmation.html' class="form-container">
+            <h3>Reservation</h3>
+            <p>Fill out to receive available dates directly to your inbox!</p>
+            <label for="name"><b>Name</b></label> 
+            <input id="name" type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="email"><b>Email</b></label> 
+            <input id="email" type="email" placeholder="Enter Email" name="email" required>
+
+            <label for="age"><b>Age</b></label>
+            <input id="age" type="number" placeholder="Enter Age" name="age" min="18" required>
+
+            <label for="persons"><b>Table for?</b></label>
+            <input id="persons" type="number" placeholder="How many people?" name="persons" min="1" max="10" required>
+        
+            <button type="submit">Send</button>
+            <button type="button" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        </section>
+
+        <section class="toggle">
+            <div onclick="pizza()" id="left"><h4>Pizzas</h4></div>
+            <div onclick="pasta()"><h4>Pastas</h4></div>
+        </section>
+
+        <section class="gallery">
+            <div class="box pizza">
+                <div><h3>Chicken Pizza</h3></div>
+                <img src="./images/chicken.jpg" alt="Chicken pizza" >
+            </div>
+            <div class="box pizza" >
+                <div><h3>Margherita Pizza</h3></div>
+                <img src="./images/margaritha.jpg" alt="Margherita pizza" >
+            </div>
+            <div class="box pizza">
+                <div><h3>Pepperoni</h3></div>
+                <img src="./images/pepperoni.jpg" alt="Pepperoni pizza" >
+            </div>
+            <div class="box pizza">
+                <div><h3>Paprika Pizza</h3></div>
+                <img src="./images/paprika.jpg" alt="Paprika pizza" >
+            </div>
+            <div class="box pizza">
+                <div><h3>Veggie Pizza</h3></div>
+                <img src="./images/veggie.jpg" alt="Veggie pizza" >
+            </div>
+            <div class="box pizza">
+                <div><h3>Hawaii Pizza</h3></div>
+                <img src="./images/hawai.jpg" alt="Hawaii pizza">
+            </div>
+            <div class="box pizza">
+                <div><h3>Portobello Pizza</h3></div>
+                <img src="./images/champi.jpg" alt="Portobello pizza">
+            </div>
+            <div class="box pizza">
+                <div><h3>Meat Lover's Pizza</h3></div>
+                <img src="./images/meat.jpg.jpg" alt="Meat Lovers pizza">
+            </div>
+            <div class="box pasta">
+                <div><h3>Pesto Pasta</h3></div>
+                <img src="./images/pesto.jpg" alt="Pesto pasta">
+            </div>
+            <div class="box pasta">
+                <div><h3>Sea Pasta</h3></div>
+                <img src="./images/sea-pasta.jpg" alt="Sea pasta">
+            </div>
+            <div class="box pasta">
+                <div><h3>Mario's Pasta</h3></div>
+                <img src="./images/Mariospasta.jpg" alt="Mario's pasta">
+            </div>
+            <div class="box pasta">
+                <div><h3>Capresse Pasta</h3></div>
+                <img src="./images/capresse.jpg" alt="Capresse pasta">
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div id="caja">
+            <div id="cont">
+            <section id="social">
+                <h5>Follow us on social media!</h5>
+                <div class="icon-bar">
+                    <a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.google.com/" class="google" target="_blank"><i class="fa fa-google"></i></a>
+                    <a href="https://www.youtube.com/" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                </div>
+            </section>
+    
+            <section id="info">
+                <h5>Contact info</h5>
+                <p><i class="fa fa-phone"></i> +123 456 6789</p>
+                <p><i class="fa regular fa-envelope"></i> info@marios.com</p>
+                <p><i class="fa fa-map-pin"></i> Street Marios <br> 095738 <br> Naples, Italy</p>
+            </section>
+            </div>
+    
+            <section id="mapa">
+                <h5>Visit us!</h5>
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=napoles&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}</style><a href="https://www.embedgooglemap.net">google maps embed generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}</style></div></div>
+            </section>
+        </div>
+    
+            <section id="copyright">
+                <p>Copyright: Mario's Pizza by Jordy</p>
+            </section>
+        </footer>
+    
+    
+
+
+
+
+
+
+    <!--  JavaScript -->
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
