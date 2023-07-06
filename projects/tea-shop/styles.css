@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid gray;
+}
+
+.logo-container {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    max-width: 300px;
+}
+#logo {
+    width: 100%;
+    max-width: 150px;
+}
+nav {
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    margin: 0;
+    min-width: 300px;
+}
+.links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0%;
+}
+.nav-item {
+    list-style-type: none;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: gray;
+}
+/* Header Tablets and large screen */
+@media screen and (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo-container {
+        width: 30%;
+    }
+    nav {
+        width: 40%;
+    }
+}
+
+/* MISSION SECTION */
+#mission-section {
+    background-image: url(./images/img-mission-background.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    margin: 100px auto 0px auto;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+/* Mission section md lg */
+@media screen and (min-width: 600px) {
+    #mission-section {
+        margin: 50px auto 0px auto;
+    }
+}
+
+/* TEA SECTION */
+#tea-section {
+    background-color: rgb(0, 0, 0);
+    margin-top: 70px;
+}
+
+#tea-section h2, #tea-section p {
+    text-align: center;
+    color: white;
+}
+
+.tea-container {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.tea-box {
+    height: 250px;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px;
+}
+
+.tea-box img {
+    width: 100%;
+}
+
+/* LOCATIONS SECTION */
+
+#locations-section {
+    background-color: rgb(0, 0, 0);
+    background-image: url(./images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    background-size: cover;
+    padding: 70px 0px 150px 0px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#locations-section h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.location-box {
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+}
+.location-box h3, .location-box p {
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+footer {
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+}
+footer h1 {
+    margin-bottom: 40px;
+}
