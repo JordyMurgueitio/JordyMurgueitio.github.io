@@ -153,11 +153,15 @@ header {
             width: 80%;
             p {
                 color: rgb(0, 0, 0);
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
             .links {
+                display: flex;
+                justify-content: space-evenly;
+                width: 90%;
+                margin: 0 auto;
                 a {
-                    background-color: #242222;
+                    background-color: #131313;
                     padding: 9px;
                     color: rgb(255, 255, 255);
                     border-radius: 15px;
@@ -176,7 +180,7 @@ header {
 /* ABOUT ME TABLETS */
 @media screen and (min-width: 750px){
     #about-me-section {
-        padding: 40px 0;
+        padding: 40px 0 0 0;
         .image-text-container {
             display: flex;
             flex-direction: row;
@@ -205,7 +209,7 @@ header {
 @media screen and (min-width: 1000px){
     #about-me-section {
         width: 100%;
-        padding: 40px 0;
+        padding: 40px 0 20px 0;
         .image-text-container {
             figure {
                 width: 40%;
@@ -223,7 +227,7 @@ header {
 /* MOBILE */
 
 #tools-section {
-    background-color: rgb(51, 49, 49);
+    background-color: rgb(243, 234, 234);
     margin: 0px;
     /* height: 100%; */
     padding-top: 40px;
@@ -233,7 +237,7 @@ header {
         padding-top: 40px;
         text-align: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin-bottom: 80px;
         /* background-color: #00252E; */
     }
@@ -241,15 +245,14 @@ header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-content: center;
+        justify-content: center;
         width: 100%;
         .service-box {
             width: 30%;
-            margin: 0 auto;
             margin-bottom: 30px;
             color: #000000;
             i {
-                color: #8F6721;
+                color: #83622a;
                 font-size: 3.4rem;
                 margin-bottom: 15px;
             }
@@ -272,13 +275,9 @@ header {
             font-weight: 400;
         }
         .link-box {
-            background-color: #2e515a00;
-            width: 100%;
             padding: 15px;
-            margin-bottom: 35px;
             a {
                 background-color: rgba(0, 0, 0, 0.5);
-                width: 100%;
                 padding: 10px;
                 margin-bottom: 25px;
                 color: white;
@@ -304,14 +303,12 @@ header {
             padding-top: 40px;
             margin-bottom: 0px;
             height: 20%;
-            background-color: rgba(0, 255, 255, 0);
         }
         .services-container {
             background-color: #35728000;
             padding-top: 3%;
             height: 40%;
             align-content: center;
-            overflow: inherit;
             .service-box {
                 background-color: rgba(0, 0, 0, 0);
                 width:20%;
@@ -336,9 +333,9 @@ header {
 
 /* PORTFOLIO SECTION */
 #portfolio-section {
-    padding: 80px 0 80px 0;
+    padding: 80px 0 40px 0;
     text-align: center;
-    background-color: #ffffff;
+    background-color: rgb(243, 234, 234);
     h1 {
         color: #000000;
         margin-bottom: 60px;
@@ -355,12 +352,13 @@ header {
         margin: 0 auto 40px auto;
         .project-box {
             width: 350px;
-            background-color: #000000;
-            border-bottom: 1px solid #222222; 
+            background-color: #131313;
+            border-radius: 15px;
             padding-bottom: 10px;
             .project-image {
                 width: 100%;
                 margin-bottom: 20px;
+                border-radius: 15px 15px 0 0;
             }
             .project-title {
                 color: #ffffff;
@@ -368,8 +366,8 @@ header {
             }
             .project-link {
                 text-decoration: none;
-                color: #fff;
-                background-color: #1f1f1f;
+                color: #ffffff;
+                background-color: #131313;
                 border: 1px solid white;
                 padding: 1%;
                 border-radius: 10px;
@@ -402,10 +400,9 @@ header {
 
 /* CONTACT SECTION */
 #contact-section {
-    background-color: #ffffff;
-    padding-top: 40px;
+    background-color: rgb(243, 234, 234);
+    padding: 0 0 60px 0;
     text-align: center;
-    height: 100vh;
     h1 {
         font-size: 2.3rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -413,22 +410,22 @@ header {
         margin-bottom: 40px;
     }
     form {
-        background-color: #ffffff;
+        background-color: #131313;
         width: 70%;
         padding: 20px;
         text-align: left;
-        margin: 0 auto 90px auto;
+        margin: 0 auto;
+        border-radius: 15px;
         label {
             display: block;
-            color: #000000;
+            color: #ffffff;
             margin-bottom: 10px;
-            background-color: #ffffff;
         }
         input, textarea {
             display: block;
             width: 100%;
             margin-top: 5px;
-            background-color: #000000;
+            background-color: #ffffff;
             font-size: .9em;
             color: white;
         }
@@ -449,25 +446,17 @@ header {
             font-weight: bold;
         }
     }
-    .contact-icons {
-        background-color: #000000;
-        border-top: 1px solid gray;
-        padding-top: 20px;
-        a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            font-size: 1.5em;
-            i {
-                color: rgb(255, 255, 255);
-                font-size: 2.2em;
-                margin: 0 10px;
-            }
-        }
-        a:hover {
-            color: gray;
+}
+
+@media screen and (min-width: 750px) {
+    #contact-section {
+        form {
+            width: 50%;
         }
     }
+
 }
+
 @media screen and (min-width: 1000px){
     #contact-section {
         text-align: center;
@@ -475,11 +464,8 @@ header {
             margin-bottom: 60px;
         }
         form {
-            width: 50%;
+            width: 40%;
             margin: 0 auto;
-        }
-        .contact-icons {
-            display: block;
         }
     }
 }

@@ -140,10 +140,16 @@ header #header-info-container .home-arrow-container a:hover {
 }
 #about-me-section .image-text-container .text-container p {
   color: rgb(0, 0, 0);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+#about-me-section .image-text-container .text-container .links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
 }
 #about-me-section .image-text-container .text-container .links a {
-  background-color: #242222;
+  background-color: #131313;
   padding: 9px;
   color: rgb(255, 255, 255);
   border-radius: 15px;
@@ -158,7 +164,7 @@ header #header-info-container .home-arrow-container a:hover {
 /* ABOUT ME TABLETS */
 @media screen and (min-width: 750px) {
   #about-me-section {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
   #about-me-section .image-text-container {
     display: flex;
@@ -187,7 +193,7 @@ header #header-info-container .home-arrow-container a:hover {
 @media screen and (min-width: 1000px) {
   #about-me-section {
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
   }
   #about-me-section .image-text-container figure {
     width: 40%;
@@ -201,7 +207,7 @@ header #header-info-container .home-arrow-container a:hover {
 /* TOOLS SECTION */
 /* MOBILE */
 #tools-section {
-  background-color: rgb(51, 49, 49);
+  background-color: rgb(243, 234, 234);
   margin: 0px;
   /* height: 100%; */
   padding-top: 40px;
@@ -212,7 +218,7 @@ header #header-info-container .home-arrow-container a:hover {
   padding-top: 40px;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 80px;
   /* background-color: #00252E; */
 }
@@ -220,17 +226,16 @@ header #header-info-container .home-arrow-container a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
+  justify-content: center;
   width: 100%;
 }
 #tools-section .services-container .service-box {
   width: 30%;
-  margin: 0 auto;
   margin-bottom: 30px;
   color: #000000;
 }
 #tools-section .services-container .service-box i {
-  color: #8F6721;
+  color: #83622a;
   font-size: 3.4rem;
   margin-bottom: 15px;
 }
@@ -252,14 +257,10 @@ header #header-info-container .home-arrow-container a:hover {
   font-weight: 400;
 }
 #tools-section .question-container .link-box {
-  background-color: rgba(46, 81, 90, 0);
-  width: 100%;
   padding: 15px;
-  margin-bottom: 35px;
 }
 #tools-section .question-container .link-box a {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
   padding: 10px;
   margin-bottom: 25px;
   color: white;
@@ -282,14 +283,12 @@ header #header-info-container .home-arrow-container a:hover {
     padding-top: 40px;
     margin-bottom: 0px;
     height: 20%;
-    background-color: rgba(0, 255, 255, 0);
   }
   #tools-section .services-container {
     background-color: rgba(53, 114, 128, 0);
     padding-top: 3%;
     height: 40%;
     align-content: center;
-    overflow: inherit;
   }
   #tools-section .services-container .service-box {
     background-color: rgba(0, 0, 0, 0);
@@ -310,9 +309,9 @@ header #header-info-container .home-arrow-container a:hover {
 }
 /* PORTFOLIO SECTION */
 #portfolio-section {
-  padding: 80px 0 80px 0;
+  padding: 80px 0 40px 0;
   text-align: center;
-  background-color: #ffffff;
+  background-color: rgb(243, 234, 234);
 }
 #portfolio-section h1 {
   color: #000000;
@@ -331,13 +330,14 @@ header #header-info-container .home-arrow-container a:hover {
 }
 #portfolio-section .projects-container .project-box {
   width: 350px;
-  background-color: #000000;
-  border-bottom: 1px solid #222222;
+  background-color: #131313;
+  border-radius: 15px;
   padding-bottom: 10px;
 }
 #portfolio-section .projects-container .project-box .project-image {
   width: 100%;
   margin-bottom: 20px;
+  border-radius: 15px 15px 0 0;
 }
 #portfolio-section .projects-container .project-box .project-title {
   color: #ffffff;
@@ -345,8 +345,8 @@ header #header-info-container .home-arrow-container a:hover {
 }
 #portfolio-section .projects-container .project-box .project-link {
   text-decoration: none;
-  color: #fff;
-  background-color: #1f1f1f;
+  color: #ffffff;
+  background-color: #131313;
   border: 1px solid white;
   padding: 1%;
   border-radius: 10px;
@@ -372,10 +372,9 @@ header #header-info-container .home-arrow-container a:hover {
 }
 /* CONTACT SECTION */
 #contact-section {
-  background-color: #ffffff;
-  padding-top: 40px;
+  background-color: rgb(243, 234, 234);
+  padding: 0 0 60px 0;
   text-align: center;
-  height: 100vh;
 }
 #contact-section h1 {
   font-size: 2.3rem;
@@ -384,23 +383,23 @@ header #header-info-container .home-arrow-container a:hover {
   margin-bottom: 40px;
 }
 #contact-section form {
-  background-color: #ffffff;
+  background-color: #131313;
   width: 70%;
   padding: 20px;
   text-align: left;
-  margin: 0 auto 90px auto;
+  margin: 0 auto;
+  border-radius: 15px;
 }
 #contact-section form label {
   display: block;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 10px;
-  background-color: #ffffff;
 }
 #contact-section form input, #contact-section form textarea {
   display: block;
   width: 100%;
   margin-top: 5px;
-  background-color: #000000;
+  background-color: #ffffff;
   font-size: 0.9em;
   color: white;
 }
@@ -420,25 +419,12 @@ header #header-info-container .home-arrow-container a:hover {
   background-color: #00252E;
   font-weight: bold;
 }
-#contact-section .contact-icons {
-  background-color: #000000;
-  border-top: 1px solid gray;
-  padding-top: 20px;
-}
-#contact-section .contact-icons a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 1.5em;
-}
-#contact-section .contact-icons a i {
-  color: rgb(255, 255, 255);
-  font-size: 2.2em;
-  margin: 0 10px;
-}
-#contact-section .contact-icons a:hover {
-  color: gray;
-}
 
+@media screen and (min-width: 750px) {
+  #contact-section form {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 1000px) {
   #contact-section {
     text-align: center;
@@ -447,11 +433,8 @@ header #header-info-container .home-arrow-container a:hover {
     margin-bottom: 60px;
   }
   #contact-section form {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
-  }
-  #contact-section .contact-icons {
-    display: block;
   }
 }
 
