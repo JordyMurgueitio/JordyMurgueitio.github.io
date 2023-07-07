@@ -44,7 +44,7 @@ header #header-info-container #home-button-container {
   bottom: 13%;
   width: 100%;
 }
-header #header-info-container #home-button-container button {
+header #header-info-container #home-button-container a {
   display: block;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
@@ -53,8 +53,10 @@ header #header-info-container #home-button-container button {
   border-radius: 5px;
   color: #fff;
   transition: 0.5s;
+  width: 200px;
+  text-decoration: none;
 }
-header #header-info-container #home-button-container button:hover {
+header #header-info-container #home-button-container a:hover {
   background-color: rgb(0, 0, 0);
 }
 header #header-info-container .home-arrow-container {
