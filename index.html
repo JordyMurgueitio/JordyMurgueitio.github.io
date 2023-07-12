@@ -74,6 +74,8 @@
                     Sed consequat risus sit amet mi sodales tempor. Aliquam et sapien condimentum, feugiat est id, tempus nunc. 
                     Mauris dolor ipsum, maximus sed sapien in, sollicitudin vehicula justo. Donec velit turpis, tincidunt quis est et, 
                 </p>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 <div class="links">
                     <a href="#contact-section">Contact Me</a>
                     <a href="./jordyCvJune.pdf" download="cvJordy">Download CV</a>
@@ -175,7 +177,7 @@
     <section id="contact-section">
         <h1>Contact</h1>
         
-        <form onsubmit="emailSend()">
+        <form method="post" action="https://formspree.io/f/xqkvkgqr">
             <label for="first-name">Name: 
                 <input id="first-name" name="first-name" type="text" placeholder="Enter your Name" required />
             </label>
@@ -191,6 +193,9 @@
             <label for="bio">Your message:
                 <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your messsage..."></textarea>
             </label>
+            
+            <input type="hidden" name="_gotcha" style="display:none" />
+
 
             <button id="submit" type="submit">SEND</button>
         </form>
