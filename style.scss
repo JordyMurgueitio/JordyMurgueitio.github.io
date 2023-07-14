@@ -140,6 +140,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 40px;
         figure {
             background-color: rgb(243, 234, 234);
             width: 80%;
@@ -151,17 +152,17 @@ header {
             }
         }
         .text-container {
-            background-color: rgb(243, 234, 234);
             width: 80%;
             p {
                 color: rgb(0, 0, 0);
                 margin-bottom: 40px;
+                font-size: 18px;
             }
             .links {
                 display: flex;
                 justify-content: space-evenly;
                 width: 90%;
-                margin: 0 auto;
+                margin: 20px auto 0 auto;
                 a {
                     background-color: #131313;
                     padding: 9px;
@@ -177,8 +178,32 @@ header {
             }
         }
     }
+    h2 {
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 60px 0 40px 0;
+    }
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        margin: 0 auto;
+        #github{
+            color: #131313;
+            background-color: #00000000;
+            font-size: 3.5em;
+            margin-right: 20px;
+        }
+        #linkedin{
+            color: #131313;
+            background-color: #00000000;
+            font-size: 3.5em;
+            margin-left: 20px;
+        }
 }
-
+}
 /* ABOUT ME TABLETS */
 @media screen and (min-width: 750px){
     #about-me-section {
@@ -203,6 +228,9 @@ header {
             .text-container {
                 width: 50%;
                 margin: 0;
+                p {
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -222,9 +250,14 @@ header {
                 margin: 0;
             }
         }
+        h2 {
+            margin: 80px 0 30px 0;
+        }
+        .links {
+            width: 40%;
+        }
     }
 }
-
 /* TOOLS SECTION */
 /* MOBILE */
 
@@ -232,7 +265,7 @@ header {
     background-color: rgb(243, 234, 234);
     margin: 0px;
     /* height: 100%; */
-    padding-top: 40px;
+    padding-top: 0px;
     text-align: center;
     h1 {
         color: #000000;
@@ -329,6 +362,9 @@ header {
 @media screen and (min-width: 1000px){
     #tools-section {
         height: 100vh;
+        h1 {
+            padding-top: 30px;
+        }
     }
 }
 
@@ -429,7 +465,7 @@ header {
             margin-top: 5px;
             background-color: #ffffff;
             font-size: .9em;
-            color: white;
+            color: rgb(0, 0, 0);
         }
         button {
             display: block;
