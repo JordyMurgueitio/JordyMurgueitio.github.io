@@ -216,9 +216,6 @@ header #header-info-container .home-arrow-container a:hover {
     width: 50%;
     margin: 0;
   }
-  #about-me-section .image-text-container .text-container p {
-    font-size: 20px;
-  }
 }
 /* About ME MEDIUM */
 @media screen and (min-width: 1000px) {
@@ -322,8 +319,6 @@ header #header-info-container .home-arrow-container a:hover {
     height: 20%;
   }
   #tools-section .services-container {
-    background-color: rgba(53, 114, 128, 0);
-    padding-top: 3%;
     height: 40%;
     align-content: center;
   }
