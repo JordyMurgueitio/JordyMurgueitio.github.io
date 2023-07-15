@@ -1,7 +1,18 @@
 // VARIABLES
 
+// NAV ELEMENTS
 const navBar = document.getElementById("nav");
 const header = document.getElementById("header");
+// DARK-LIGHT MODE ELEMENTS
+const moon = document.getElementById("moon");
+const sun = document.getElementById("sun");
+// ABOUT ME SECTION ELEMENTS
+const aboutMeSection = document.getElementById("about-me-section");
+const aboutMeTitle = document.getElementById("about-me-title");
+const aboutMeInfo = document.getElementById("about-me-info");
+
+
+
 
 function scrollFunction() {
     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
@@ -23,3 +34,16 @@ function scrollFunction() {
 window.onscroll = function() {scrollFunction()};
 
 
+
+function chnageDarkMode () {
+    // displays and hides elements
+    moon.style.display = "none"; 
+    sun.style.display = "block";
+    //changes backgroundcolor and font color about me section
+    aboutMeSection.style.backgroundColor = "#0D1117"; 
+    aboutMeSection.style.color = "rgb(197 197 197)";
+    aboutMeTitle.style.color = "rgb(197 197 197)";
+    aboutMeInfo.style.color = "rgb(197 197 197)";
+}
+
+moon.addEventListener("click", chnageDarkMode);

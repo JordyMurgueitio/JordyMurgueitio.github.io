@@ -120,6 +120,22 @@ header #header-info-container .home-arrow-container a:hover {
   margin: 0;
   text-align: center;
   padding: 40px 0 0 0;
+  position: relative;
+}
+#about-me-section #moon {
+  position: absolute;
+  right: 5%;
+  top: 50px;
+  font-size: 1.6rem;
+  display: block;
+}
+#about-me-section #sun {
+  position: absolute;
+  right: 5%;
+  top: 50px;
+  font-size: 1.6rem;
+  display: none;
+  color: rgb(197, 197, 197);
 }
 #about-me-section h1 {
   color: rgb(0, 0, 0);
@@ -135,7 +151,6 @@ header #header-info-container .home-arrow-container a:hover {
   margin-bottom: 40px;
 }
 #about-me-section .image-text-container figure {
-  background-color: rgb(243, 234, 234);
   width: 80%;
   margin: 0 0 40px 0;
 }
