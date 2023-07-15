@@ -79,23 +79,30 @@ header #header-info-container .home-arrow-container a:hover {
   header #nav {
     display: block;
     width: 100%;
+    background-color: rgba(19, 19, 19, 0);
+    padding: 20px 0;
   }
   header #nav ul {
     padding-left: 0px;
-    padding-top: 20px;
+    background-color: rgba(131, 98, 42, 0);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
   header #nav ul li {
     list-style-type: none;
-    display: inline-block;
-    width: 12%;
   }
   header #nav ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 18px;
+    transition: 0.1s;
   }
   header #nav ul li a:hover {
-    color: #000000;
+    border-bottom: 2px solid white;
   }
 }
 /* HOME SECTION MEDIUM */

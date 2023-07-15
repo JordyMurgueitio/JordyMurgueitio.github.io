@@ -88,20 +88,27 @@ header {
         #nav {
             display: block;
             width: 100%;
+            background-color: #13131300;
+            padding: 20px 0;
             ul {
                 padding-left: 0px;
-                padding-top: 20px;
+                background-color: #83622a00;
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content:space-evenly;
                 li {
                     list-style-type: none;
-                    display: inline-block;  
-                    width: 12%;
                     a {
                         color: rgb(255, 255, 255);
                         text-decoration: none;
-                        font-size: 1.1rem;
+                        font-size: 18px;
+                        transition: 0.1s;
                     }
                     a:hover {
-                        color: #000000;
+                        border-bottom: 2px solid white;
                     }
                 }
             }
