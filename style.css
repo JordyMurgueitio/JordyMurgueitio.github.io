@@ -319,6 +319,7 @@ header #header-info-container .home-arrow-container a:hover {
     height: 20%;
   }
   #tools-section .services-container {
+    padding-top: 3%;
     height: 40%;
     align-content: center;
   }
@@ -365,9 +366,10 @@ header #header-info-container .home-arrow-container a:hover {
 }
 #portfolio-section .projects-container .project-box {
   width: 350px;
-  background-color: #131313;
+  background-color: rgb(243, 234, 234);
   border-radius: 15px;
   padding-bottom: 10px;
+  box-shadow: 2px 2px 10px #b4c2b4;
 }
 #portfolio-section .projects-container .project-box .project-image {
   width: 100%;
@@ -375,7 +377,7 @@ header #header-info-container .home-arrow-container a:hover {
   border-radius: 15px 15px 0 0;
 }
 #portfolio-section .projects-container .project-box .project-title {
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 20px;
 }
 #portfolio-section .projects-container .project-box .project-link {
