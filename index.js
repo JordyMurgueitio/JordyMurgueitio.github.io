@@ -10,6 +10,8 @@ const sun = document.getElementById("sun");
 const aboutMeSection = document.getElementById("about-me-section");
 const aboutMeTitle = document.getElementById("about-me-title");
 const aboutMeInfo = document.getElementById("about-me-info");
+const github = document.getElementById("github");
+const linkedin = document.getElementById("linkedin");
 
 
 
@@ -44,6 +46,8 @@ function chnageDarkMode () {
     aboutMeSection.style.color = "rgb(197 197 197)";
     aboutMeTitle.style.color = "rgb(197 197 197)";
     aboutMeInfo.style.color = "rgb(197 197 197)";
+    github.style.color = "#ffffff";
+    linkedin.style.color = "#ffffff";
 }
 
 moon.addEventListener("click", chnageDarkMode);
