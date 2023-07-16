@@ -112,6 +112,11 @@ header #header-info-container .home-arrow-container a:hover {
     text-align: center;
   }
 }
+.dark-mode {
+  background-color: #0D1117;
+  color: rgb(197, 197, 197);
+}
+
 /* About me */
 /* Mobile */
 #about-me-section {
@@ -390,7 +395,7 @@ header #header-info-container .home-arrow-container a:hover {
   background-color: rgb(243, 234, 234);
   border-radius: 15px;
   padding-bottom: 10px;
-  box-shadow: 2px 2px 10px #b4c2b4;
+  box-shadow: 2px 2px 5px #746d4b; /* #064652 #746d4b */
 }
 #portfolio-section .projects-container .project-box .project-image {
   width: 100%;
@@ -447,6 +452,7 @@ header #header-info-container .home-arrow-container a:hover {
   text-align: left;
   margin: 0 auto;
   border-radius: 15px;
+  border: 1px solid white;
 }
 #contact-section form label {
   display: block;

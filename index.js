@@ -12,6 +12,19 @@ const aboutMeTitle = document.getElementById("about-me-title");
 const aboutMeInfo = document.getElementById("about-me-info");
 const github = document.getElementById("github");
 const linkedin = document.getElementById("linkedin");
+// SKILLS SECTION ELEMENTS
+const skillsSection = document.getElementById("tools-section");
+const toolsTitle = document.getElementById("tools-title");
+const skillsInfos = document.getElementsByClassName("service-box");
+// PORTFOLIO SECTION ELEMENTS
+const portfolioSection = document.getElementById("portfolio-section");
+const portfolioTitle = document.getElementById("portfolio-title");
+const projectBox = document.getElementsByClassName("project-box");
+const projectTitle = document.getElementsByClassName("project-title");
+// CONTACT SECTION ELEMENTS
+const contactSection = document.getElementById("contact-section");
+const contactTitle = document.getElementById("contact-title");
+const contactForm = document.getElementById("form");
 
 
 
@@ -48,6 +61,23 @@ function chnageDarkMode () {
     aboutMeInfo.style.color = "rgb(197 197 197)";
     github.style.color = "#ffffff";
     linkedin.style.color = "#ffffff";
+    //changes backgroundcolor and font color skills section
+    skillsSection.style.backgroundColor = "#0D1117";
+    toolsTitle.style.color = "rgb(197 197 197)";
+    for (let i = 0; i < skillsInfos.length; i++) {
+        skillsInfos[i].style.color = "rgb(197 197 197)";
+    }
+    //changes backgroundcolor and font color portfolio section
+    portfolioSection.style.backgroundColor = "#0D1117";
+    portfolioTitle.style.color = "rgb(197 197 197)";
+    for (let i = 0; i < projectBox.length; i++) {
+        projectBox[i].style.backgroundColor = "#0D1117";
+        projectBox[i].style.boxShadow = "2px 2px 5px #064652";
+        projectTitle[i].style.color = "rgb(197 197 197)";
+    }
+    //changes backgroundcolor and font color contact section
+    contactSection.style.backgroundColor = "#0D1117";
+    contactTitle.style.color = "rgb(197 197 197)";
 }
 
 moon.addEventListener("click", chnageDarkMode);
