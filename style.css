@@ -159,7 +159,7 @@ header #header-info-container .home-arrow-container a:hover {
   color: #131313;
   transition: 0.3s;
   animation-name: bounceIn;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -171,7 +171,7 @@ header #header-info-container .home-arrow-container a:hover {
   display: none;
   color: rgb(197, 197, 197);
   animation-name: bounceIn;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -332,7 +332,7 @@ header #header-info-container .home-arrow-container a:hover {
   color: #000000;
 }
 #tools-section .services-container .service-box i {
-  color: #83622a;
+  color: #886937;
   font-size: 3.4rem;
   margin-bottom: 15px;
 }
