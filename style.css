@@ -1,3 +1,37 @@
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes borderColor {
+  0% {
+    border: 3px solid white;
+  }
+  25% {
+    border: 3px solid #064652;
+  }
+  50% {
+    border: 3px solid #064652;
+  }
+  75% {
+    border: 3px solid #064652;
+  }
+  100% {
+    border: 3px solid white;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -102,7 +136,7 @@ header #header-info-container .home-arrow-container a:hover {
     transition: 0.1s;
   }
   header #nav ul li a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px dotted white;
   }
 }
 /* HOME SECTION MEDIUM */
@@ -112,11 +146,6 @@ header #header-info-container .home-arrow-container a:hover {
     text-align: center;
   }
 }
-.dark-mode {
-  background-color: #0D1117;
-  color: rgb(197, 197, 197);
-}
-
 /* About me */
 /* Mobile */
 #about-me-section {
@@ -135,9 +164,10 @@ header #header-info-container .home-arrow-container a:hover {
   display: block;
   color: #131313;
   transition: 0.3s;
-}
-#about-me-section #moon:hover {
-  font-size: 1.9rem;
+  animation-name: bounceIn;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 #about-me-section #sun {
   position: absolute;
@@ -146,9 +176,10 @@ header #header-info-container .home-arrow-container a:hover {
   font-size: 1.8rem;
   display: none;
   color: rgb(197, 197, 197);
-}
-#about-me-section #sun:hover {
-  font-size: 1.9rem;
+  animation-name: bounceIn;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 #about-me-section h1 {
   color: rgb(0, 0, 0);
@@ -171,6 +202,10 @@ header #header-info-container .home-arrow-container a:hover {
   width: 100%;
   max-width: 240px;
   border: #ffffff 3px solid;
+  animation-name: borderColor;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 #about-me-section .image-text-container .text-container {
   width: 80%;

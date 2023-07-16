@@ -1,4 +1,39 @@
 $main-color: rgb(0, 0, 0);
+@keyframes bounceIn {
+    0% { 
+    transform: scale(0.9);
+    }
+    25% {
+        transform: scale(1);
+    }
+    50% {   
+    transform: scale(1.1);
+    }
+    75% {
+    transform: scale(1);  
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes borderColor {
+    0% {
+        border: 3px solid white;
+    }
+    25% {
+        border: 3px solid #064652;
+    }
+    50% {
+        border: 3px solid #064652;
+    }
+    75% {
+        border: 3px solid #064652;
+    }
+    100% {
+        border: 3px solid white;
+    }
+}
 
 *{
     box-sizing: border-box;
@@ -108,7 +143,7 @@ header {
                         transition: 0.1s;
                     }
                     a:hover {
-                        border-bottom: 2px solid white;
+                        border-bottom: 2px dotted white;
                     }
                 }
             }
@@ -125,10 +160,7 @@ header {
     }
 }
 
-.dark-mode {
-    background-color: #0D1117;
-    color: rgb(197 197 197);
-}
+
 
 /* About me */
 /* Mobile */
@@ -148,9 +180,10 @@ header {
         display: block;
         color: #131313;
         transition: 0.3s;
-    }
-    #moon:hover {
-        font-size: 1.9rem;
+        animation-name: bounceIn;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
     }
     #sun {
         position: absolute; 
@@ -159,9 +192,10 @@ header {
         font-size: 1.8rem; 
         display: none;
         color: rgb(197 197 197);
-    }
-    #sun:hover {
-        font-size: 1.9rem;
+        animation-name: bounceIn;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
     }
     h1 {
         color: rgb(0, 0, 0);
@@ -182,6 +216,10 @@ header {
                 width: 100%;
                 max-width: 240px;
                 border: #ffffff 3px solid;
+                animation-name: borderColor;
+                animation-duration: 10s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
             }
         }
         .text-container {
