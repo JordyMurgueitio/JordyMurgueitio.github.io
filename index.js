@@ -81,3 +81,35 @@ function chnageDarkMode () {
 }
 
 moon.addEventListener("click", chnageDarkMode);
+
+function chnageLightMode () {
+    // displays and hides elements
+    moon.style.display = "block"; 
+    sun.style.display = "none";
+    //changes backgroundcolor and font color about me section
+    aboutMeSection.style.backgroundColor = "rgb(243, 234, 234)"; 
+    aboutMeSection.style.color = "rgb(0, 0, 0)";
+    aboutMeTitle.style.color = "rgb(0, 0, 0)";
+    aboutMeInfo.style.color = "rgb(0, 0, 0)";
+    github.style.color = "#131313";
+    linkedin.style.color = "#131313";
+    //changes backgroundcolor and font color skills section
+    skillsSection.style.backgroundColor = "rgb(243, 234, 234)";
+    toolsTitle.style.color = "rgb(0, 0, 0)";
+    for (let i = 0; i < skillsInfos.length; i++) {
+        skillsInfos[i].style.color = "rgb(0, 0, 0)";
+    }
+    //changes backgroundcolor and font color portfolio section
+    portfolioSection.style.backgroundColor = "rgb(243, 234, 234)";
+    portfolioTitle.style.color = "rgb(0, 0, 0)";
+    for (let i = 0; i < projectBox.length; i++) {
+        projectBox[i].style.backgroundColor = "rgb(243, 234, 234)";
+        projectBox[i].style.boxShadow = "2px 2px 5px #746d4b";
+        projectTitle[i].style.color = "rgb(0, 0, 0)";
+    }
+    //changes backgroundcolor and font color contact section
+    contactSection.style.backgroundColor = "rgb(243, 234, 234)";
+    contactTitle.style.color = "rgb(0, 0, 0)";
+}
+
+sun.addEventListener("click", chnageLightMode);
