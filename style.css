@@ -19,13 +19,7 @@
   0% {
     border: 3px solid white;
   }
-  25% {
-    border: 3px solid #064652;
-  }
   50% {
-    border: 3px solid #064652;
-  }
-  75% {
     border: 3px solid #064652;
   }
   100% {
@@ -203,7 +197,7 @@ header #header-info-container .home-arrow-container a:hover {
   max-width: 240px;
   border: #ffffff 3px solid;
   animation-name: borderColor;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
