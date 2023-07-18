@@ -200,7 +200,7 @@ header #header-info-container .home-arrow-container a:hover {
   width: 100%;
   max-width: 240px;
   border: #ffffff 3px solid;
-  box-shadow: 3px 3px 5px black;
+  box-shadow: 2px 2px 5px black;
 }
 #about-me-section .image-text-container .text-container {
   width: 80%;
@@ -441,7 +441,7 @@ header #header-info-container .home-arrow-container a:hover {
   background-color: rgb(243, 234, 234);
   border-radius: 15px;
   padding-bottom: 10px;
-  box-shadow: 2px 2px 5px #064652; /* #064652 #746d4b */
+  box-shadow: 2px 2px 5px #b4bbbb; /* #064652 #746d4b */
 }
 #portfolio-section .projects-container .project-box .project-image {
   width: 100%;
