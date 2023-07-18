@@ -73,7 +73,7 @@ function chnageDarkMode () {
     portfolioTitle.style.color = "rgb(197 197 197)";
     for (let i = 0; i < projectBox.length; i++) {
         projectBox[i].style.backgroundColor = "#0D1117";
-        projectBox[i].style.boxShadow = "2px 2px 5px #000000";
+        projectBox[i].style.boxShadow = "3px 3px 5px #000000";
         projectTitle[i].style.color = "rgb(197 197 197)";
     }
     //changes backgroundcolor and font color contact section
@@ -105,7 +105,7 @@ function chnageLightMode () {
     portfolioTitle.style.color = "rgb(0, 0, 0)";
     for (let i = 0; i < projectBox.length; i++) {
         projectBox[i].style.backgroundColor = "rgb(243, 234, 234)";
-        projectBox[i].style.boxShadow = "2px 2px 5px #b4bbbb";
+        projectBox[i].style.boxShadow = "3px 3px 5px #929191";
         projectTitle[i].style.color = "rgb(0, 0, 0)";
     }
     //changes backgroundcolor and font color contact section
