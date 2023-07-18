@@ -22,7 +22,7 @@ $main-color: rgb(0, 0, 0);
         border: 2px solid white;
     }
     50% {
-        border: 2px solid #064652;
+        border: 2px solid #17a4bd;
     }
     100% {
         border: 2px solid white;
@@ -214,6 +214,7 @@ header {
                 width: 100%;
                 max-width: 240px;
                 border: #ffffff 3px solid;
+                box-shadow: 3px 3px 5px black;
             }
         }
         .text-container {
