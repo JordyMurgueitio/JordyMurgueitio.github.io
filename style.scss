@@ -19,13 +19,13 @@ $main-color: rgb(0, 0, 0);
 
 @keyframes borderColor {
     0% {
-        border: 3px solid white;
+        border: 2px solid white;
     }
     50% {
-        border: 3px solid #064652;
+        border: 2px solid #064652;
     }
     100% {
-        border: 3px solid white;
+        border: 2px solid white;
     }
 }
 
@@ -88,6 +88,10 @@ header {
                 transition: .5s;
                 width: 200px;
                 text-decoration: none;
+                animation-name: borderColor;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
             }
             a:hover {
                 background-color: rgb(0, 0, 0);
@@ -118,7 +122,7 @@ header {
             display: block;
             width: 100%;
             background-color: #13131300;
-            padding: 20px 0;
+            padding: 15px 0;
             ul {
                 padding-left: 0px;
                 background-color: #83622a00;
@@ -175,7 +179,7 @@ header {
         color: #131313;
         transition: 0.3s;
         animation-name: bounceIn;
-        animation-duration: 4s;
+        animation-duration: 3s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
@@ -187,13 +191,13 @@ header {
         display: none;
         color: rgb(197 197 197);
         animation-name: bounceIn;
-        animation-duration: 4s;
+        animation-duration: 3s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
     h1 {
         color: rgb(0, 0, 0);
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         /* background-color: rgb(117, 91, 56); */
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 2.2rem;
@@ -210,10 +214,6 @@ header {
                 width: 100%;
                 max-width: 240px;
                 border: #ffffff 3px solid;
-                animation-name: borderColor;
-                animation-duration: 5s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
             }
         }
         .text-container {
@@ -221,7 +221,7 @@ header {
             p {
                 color: rgb(0, 0, 0);
                 margin-bottom: 40px;
-                font-size: 18px;
+                font-size: 16px;
             }
             .links {
                 display: flex;
@@ -236,6 +236,10 @@ header {
                     border: 1px solid rgb(255, 255, 255);
                     transition: .5s;
                     text-decoration: none;
+                    animation-name: borderColor;
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
                 }
                 a:hover {
                     background-color: #00252E;
@@ -300,7 +304,7 @@ header {
 @media screen and (min-width: 1000px){
     #about-me-section {
         width: 100%;
-        padding: 40px 0 20px 0;
+        padding: 50px 0 20px 0;
         .image-text-container {
             figure {
                 width: 40%;
@@ -382,6 +386,10 @@ header {
                 font-size: 1.1rem;
                 border: 2px solid white;
                 transition: .5s;
+                animation: borderColor;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
             }
             a:hover {
                 background-color: rgb(0, 0, 0);
@@ -453,7 +461,7 @@ header {
             background-color: rgb(243, 234, 234);
             border-radius: 15px;
             padding-bottom: 10px;
-            box-shadow: 2px 2px 5px #746d4b; /* #064652 #746d4b */
+            box-shadow: 2px 2px 5px #064652; /* #064652 #746d4b */
             .project-image {
                 width: 100%;
                 margin-bottom: 20px;
@@ -517,6 +525,10 @@ header {
         margin: 0 auto;
         border-radius: 15px;
         border: 1px solid white;
+        animation: borderColor;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
         label {
             display: block;
             color: #ffffff;
@@ -527,8 +539,10 @@ header {
             width: 100%;
             margin-top: 5px;
             background-color: #ffffff;
+            border-radius: 5px;
             font-size: .9em;
             color: rgb(0, 0, 0);
+            padding: 2px 0;
         }
         button {
             display: block;
