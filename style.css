@@ -554,5 +554,58 @@ header #header-info-container .home-arrow-container a:hover {
     margin: 0 auto;
   }
 }
+/* FOOTER MOBILE */
+#footer {
+  background-color: rgb(243, 234, 234);
+}
+#footer #footer-title {
+  text-align: center;
+  background-color: rgba(136, 105, 55, 0);
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  margin: 0 0 10px 0;
+}
+#footer hr {
+  width: 300px;
+  margin: 0 auto 20px auto;
+  color: #000000;
+}
+#footer .links-box {
+  background-color: rgba(0, 37, 46, 0);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 210px;
+}
+#footer .links-box a {
+  font-size: 2.5em;
+  color: #131313;
+}
+#footer .footer-nav {
+  background-color: rgba(66, 43, 43, 0);
+  padding: 10px 0 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 200px;
+  margin: 0 auto 20px auto;
+}
+#footer .footer-nav li {
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+#footer .footer-nav li a {
+  text-decoration: none;
+  color: #17a4bd;
+  font-size: 18px;
+}
+#footer #coded-by {
+  text-align: center;
+  font-family: cursive;
+  font-weight: 300;
+  color: #131313;
+  font-size: 16px;
+  padding: 10px 0;
+}
 
 /*# sourceMappingURL=style.css.map */

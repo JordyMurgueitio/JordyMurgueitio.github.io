@@ -26,7 +26,13 @@ const projectTitle = document.getElementsByClassName("project-title");
 const contactSection = document.getElementById("contact-section");
 const contactTitle = document.getElementById("contact-title");
 const contactForm = document.getElementById("form");
-
+// FOOTER ELEMENTS 
+const footer = document.getElementById("footer");
+const footerTitle = document.getElementById("footer-title");
+const hr = document.getElementById("hr");
+const githubFoot = document.getElementById("github-footer");
+const linkedinFoot = document.getElementById("linkedin-footer");
+const codedBy = document.getElementById("coded-by");
 
 
 
@@ -79,6 +85,13 @@ function chnageDarkMode () {
     //changes backgroundcolor and font color contact section
     contactSection.style.backgroundColor = "#0D1117";
     contactTitle.style.color = "rgb(197 197 197)";
+    //changes backgroundcolor and font color footer 
+    footer.style.backgroundColor = "#0D1117";
+    footerTitle.style.color = "rgb(197 197 197)";
+    hr.style.color = "rgb(197 197 197)";
+    githubFoot.style.color = "rgb(197 197 197)";
+    linkedinFoot.style.color = "rgb(197 197 197)";
+    codedBy.style.color = "rgb(197 197 197)";
 }
 
 moon.addEventListener("click", chnageDarkMode);
@@ -111,6 +124,13 @@ function chnageLightMode () {
     //changes backgroundcolor and font color contact section
     contactSection.style.backgroundColor = "rgb(243, 234, 234)";
     contactTitle.style.color = "rgb(0, 0, 0)";
+    //changes backgroundcolor and font color footer
+    footer.style.backgroundColor = "rgb(243, 234, 234)";
+    footerTitle.style.color = "rgb(0, 0, 0)";
+    hr.style.color = "rgb(0, 0, 0)";
+    githubFoot.style.color = "#131313";
+    linkedinFoot.style.color = "#131313";
+    codedBy.style.color = "#131313";
 }
 
 sun.addEventListener("click", chnageLightMode);
