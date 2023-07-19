@@ -190,7 +190,6 @@ header #header-info-container .home-arrow-container a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
 }
 #about-me-section .image-text-container figure {
   width: 80%;
@@ -207,14 +206,47 @@ header #header-info-container .home-arrow-container a:hover {
 }
 #about-me-section .image-text-container .text-container p {
   color: rgb(0, 0, 0);
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   font-size: 16px;
+  display: block;
+}
+#about-me-section .image-text-container .text-container .social-container {
+  display: none;
+  background-color: rgba(0, 37, 46, 0);
+  margin-bottom: 25px;
+  padding: 0;
+}
+#about-me-section .image-text-container .text-container .social-container h2 {
+  margin: 0 0 20px 0;
+  font-size: 27px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#about-me-section .image-text-container .text-container .social-container #github {
+  color: #131313;
+  font-size: 2.5em;
+  margin-right: 20px;
+}
+#about-me-section .image-text-container .text-container .social-container #linkedin {
+  color: #131313;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 2.5em;
+  margin-left: 20px;
+}
+#about-me-section .image-text-container .text-container .arrows-box {
+  background-color: rgba(46, 90, 99, 0);
+}
+#about-me-section .image-text-container .text-container .arrows-box i {
+  margin: 0 10px;
+  font-size: 20px;
+}
+#about-me-section .image-text-container .text-container .arrows-box i:hover {
+  color: #17a4bd;
 }
 #about-me-section .image-text-container .text-container .links {
   display: flex;
   justify-content: space-evenly;
   width: 90%;
-  margin: 20px auto 0 auto;
+  margin: 40px auto 0 auto;
 }
 #about-me-section .image-text-container .text-container .links a {
   background-color: #131313;
@@ -231,31 +263,6 @@ header #header-info-container .home-arrow-container a:hover {
 }
 #about-me-section .image-text-container .text-container .links a:hover {
   background-color: #00252E;
-}
-#about-me-section h2 {
-  margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 60px 0 40px 0;
-}
-#about-me-section .links {
-  display: flex;
-  justify-content: space-evenly;
-  width: 60%;
-  margin: 0 auto;
-}
-#about-me-section .links #github {
-  color: #131313;
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 3.5em;
-  margin-right: 20px;
-}
-#about-me-section .links #linkedin {
-  color: #131313;
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 3.5em;
-  margin-left: 20px;
 }
 
 /* ABOUT ME TABLETS */
@@ -299,9 +306,6 @@ header #header-info-container .home-arrow-container a:hover {
     width: 50%;
     margin: 0;
   }
-  #about-me-section h2 {
-    margin: 80px 0 30px 0;
-  }
   #about-me-section .links {
     width: 40%;
   }
@@ -312,12 +316,11 @@ header #header-info-container .home-arrow-container a:hover {
   background-color: rgb(243, 234, 234);
   margin: 0px;
   /* height: 100%; */
-  padding-top: 0px;
+  padding-top: 50px;
   text-align: center;
 }
 #tools-section h1 {
   color: #000000;
-  padding-top: 40px;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2.2rem;
@@ -410,8 +413,6 @@ header #header-info-container .home-arrow-container a:hover {
 @media screen and (min-width: 1000px) {
   #tools-section {
     height: 100vh;
-  }
-  #tools-section h1 {
     padding-top: 30px;
   }
 }

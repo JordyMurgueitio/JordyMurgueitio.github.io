@@ -9,8 +9,11 @@ const sun = document.getElementById("sun");
 // ABOUT ME SECTION ELEMENTS
 const aboutMeSection = document.getElementById("about-me-section");
 const aboutMeTitle = document.getElementById("about-me-title");
-const aboutMeInfo = document.getElementById("about-me-info");
 const jordyImage = document.getElementById("jordy-image");
+const aboutMeInfo = document.getElementById("about-me-info");
+const socialInfo = document.querySelector(".social-container");
+const leftArrow = document.getElementById("left-arrow");
+const rightArrow = document.getElementById("right-arrow");
 const github = document.getElementById("github");
 const linkedin = document.getElementById("linkedin");
 // SKILLS SECTION ELEMENTS
@@ -134,3 +137,16 @@ function chnageLightMode () {
 }
 
 sun.addEventListener("click", chnageLightMode);
+
+
+function moveRight () {
+    aboutMeInfo.style.display = "none";
+    socialInfo.style.display = "block";
+}
+function moveLeft () {
+    aboutMeInfo.style.display = "block";
+    socialInfo.style.display = "none";
+}
+
+rightArrow.addEventListener("click", moveRight);
+leftArrow.addEventListener("click", moveLeft);
