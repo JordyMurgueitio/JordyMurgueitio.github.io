@@ -521,6 +521,7 @@ header {
         background-color: #131313;
         width: 70%;
         min-width: 340px;
+        max-width: 450px;
         padding: 20px;
         text-align: left;
         margin: 0 auto;
@@ -547,19 +548,21 @@ header {
         }
         button {
             display: block;
-            margin: 0 auto;
+            margin: 40px auto 10px auto;
             width: 30%;
-            margin-top: 25px;
             border: 1px solid white;
             border-radius: 10px;
-            padding: 10px;
-            background-color: rgb(32, 32, 32);
+            padding: 5px;
+            background-color:#131313;
             color: #fff;
+            animation: borderColor;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transition: .5s;
         }
         button:hover {
-            box-shadow: 1px 1px white;
-            background-color: #00252E;
-            font-weight: bold;
+            background-color: #00252E ;/*  #00252E */
         }
     }
 }
