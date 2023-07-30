@@ -475,16 +475,16 @@ header {
             }
             .project-link {
                 text-decoration: none;
-                color: #ffffff;
+                color:#eeeeee;
+                font-size: 18px;
+                padding: 5px 10px;
+                border: 1px solid #17a4bd;
+                border-radius: 15px;
+                transition: .5s;
                 background-color: #131313;
-                border: 1px solid white;
-                padding: 1%;
-                border-radius: 10px;
             }
             .project-link:hover {
-                background-color: #ffffff;
-                border: 1px solid black;
-                color: #000000;
+                background-color:  #00252E;
             }
         }
     }

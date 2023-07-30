@@ -25,6 +25,7 @@ const portfolioSection = document.getElementById("portfolio-section");
 const portfolioTitle = document.getElementById("portfolio-title");
 const projectBox = document.getElementsByClassName("project-box");
 const projectTitle = document.getElementsByClassName("project-title");
+const projectLink = document.getElementsByClassName("project-link");
 // CONTACT SECTION ELEMENTS
 const contactSection = document.getElementById("contact-section");
 const contactTitle = document.getElementById("contact-title");
@@ -65,31 +66,32 @@ function chnageDarkMode () {
     moon.style.display = "none"; 
     sun.style.display = "block";
     //changes backgroundcolor and font color about me section
-    aboutMeSection.style.backgroundColor = "#0D1117"; 
+    aboutMeSection.style.backgroundColor = "#0F0F0F"; // #0D1117
     aboutMeSection.style.color = "rgb(197 197 197)";
     aboutMeTitle.style.color = "rgb(197 197 197)";
     aboutMeInfo.style.color = "rgb(197 197 197)";
     github.style.color = "#ffffff";
     linkedin.style.color = "#ffffff";
     //changes backgroundcolor and font color skills section
-    skillsSection.style.backgroundColor = "#0D1117";
+    skillsSection.style.backgroundColor = "#0F0F0F";
     toolsTitle.style.color = "rgb(197 197 197)";
     for (let i = 0; i < skillsInfos.length; i++) {
         skillsInfos[i].style.color = "rgb(197 197 197)";
     }
     //changes backgroundcolor and font color portfolio section
-    portfolioSection.style.backgroundColor = "#0D1117";
+    portfolioSection.style.backgroundColor = "#0F0F0F";
     portfolioTitle.style.color = "rgb(197 197 197)";
     for (let i = 0; i < projectBox.length; i++) {
-        projectBox[i].style.backgroundColor = "#0D1117";
+        projectBox[i].style.backgroundColor = "#0F0F0F";
         projectBox[i].style.boxShadow = "3px 3px 5px #000000";
         projectTitle[i].style.color = "rgb(197 197 197)";
+        projectLink[i].style.color = "#fff";
     }
     //changes backgroundcolor and font color contact section
-    contactSection.style.backgroundColor = "#0D1117";
+    contactSection.style.backgroundColor = "#0F0F0F";
     contactTitle.style.color = "rgb(197 197 197)";
     //changes backgroundcolor and font color footer 
-    footer.style.backgroundColor = "#0D1117";
+    footer.style.backgroundColor = "#0F0F0F";
     footerTitle.style.color = "rgb(197 197 197)";
     hr.style.color = "rgb(197 197 197)";
     githubFoot.style.color = "rgb(197 197 197)";
@@ -123,6 +125,7 @@ function chnageLightMode () {
         projectBox[i].style.backgroundColor = "rgb(243, 234, 234)";
         projectBox[i].style.boxShadow = "3px 3px 5px #929191";
         projectTitle[i].style.color = "rgb(0, 0, 0)";
+        // projectLink[i].style.color = "white";
     }
     //changes backgroundcolor and font color contact section
     contactSection.style.backgroundColor = "rgb(243, 234, 234)";
